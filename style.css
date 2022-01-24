@@ -58,7 +58,7 @@
 }
 
 .container .navbar .navbar-left .lang a {
-  color: #0066FF;
+  color: #0066ff;
 }
 
 .container .navbar .navbar-left .lang a:first-child {
@@ -118,7 +118,7 @@
 }
 
 .container .info .context .text a {
-  color: #0066FF;
+  color: #0066ff;
 }
 
 .container .info .context img {
@@ -131,6 +131,39 @@
   padding-top: 72px;
   padding-bottom: 72px;
   text-align: center;
+}
+
+.container .contextAleph .contextValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 64px 64px;
+  background: #101828;
+  border-radius: 16px;
+}
+
+.container .contextAleph .contextValue .content {
+  width: 33%;
+}
+
+.container .contextAleph .contextValue h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.container .contextAleph .contextValue h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #E4E7EC;
 }
 
 .container .contextAleph h1 {

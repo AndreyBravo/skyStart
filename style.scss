@@ -36,7 +36,7 @@
         font-size: 14px;
         line-height: 22px;
         a {
-          color: #0066FF;
+          color: #0066ff;
           &:first-child {
             margin-right: 12px;
             color: #98a2b3;
@@ -86,8 +86,8 @@
           font-size: 1.5em;
           color: #667085;
         }
-        a{
-          color: #0066FF;
+        a {
+          color: #0066ff;
         }
       }
       img {
@@ -101,6 +101,31 @@
     padding-top: 72px;
     padding-bottom: 72px;
     text-align: center;
+    .contextValue {
+      display: flex;
+      justify-content: space-between;
+      padding: 64px 64px;
+      background: #101828;
+      border-radius: 16px;
+      .content{
+        width: 33%;
+      }
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+      }
+      h4 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #E4E7EC;
+      }
+    }
     h1 {
       font-family: "Inter";
       font-style: normal;
