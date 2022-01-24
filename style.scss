@@ -103,20 +103,26 @@
     text-align: center;
     .contextValue {
       display: flex;
-      justify-content: space-between;
-      padding: 64px 64px;
+      align-items: center;
+      justify-content: center;
+      
+      margin-bottom: 56px;
       background: #101828;
       border-radius: 16px;
-      margin-bottom: 56px;
-      .content{
-        width: 33%;
+      .content {
+        &:nth-child(2){
+          margin-left: 250px;
+          margin-right: 250px;
+        }
       }
+
       h1 {
+        padding-top: 64px;
         font-family: "Inter";
         font-style: normal;
         font-weight: 600;
         font-size: 60px;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 12px;
       }
       h4 {
@@ -124,7 +130,8 @@
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
-        color: #E4E7EC;
+        color: #e4e7ec;
+        padding-bottom: 64px;
       }
     }
     h1 {
