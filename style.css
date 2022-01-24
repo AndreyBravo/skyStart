@@ -1,0 +1,410 @@
+.container .contextAleph .more, .container .vacancy ul li .more {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .contextAleph .more a:nth-child(1), .container .vacancy ul li .more a:nth-child(1) {
+  margin-right: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  color: #0066ff;
+}
+
+.container .contextAleph .more a:nth-child(2), .container .vacancy ul li .more a:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px 48px;
+}
+
+.container .footer .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .footer .footer-left .lang {
+  margin: 16px 32px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.container .footer .footer-left .lang a {
+  color: #0066FF;
+}
+
+.container .footer .footer-left .lang a:first-child {
+  margin-right: 12px;
+  color: #98a2b3;
+  text-decoration: none;
+}
+
+.container .footer .footer-left button {
+  padding: 12px 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid #0075ff;
+  border-radius: 8px;
+  color: #0075ff;
+  cursor: pointer;
+}
+
+.container .info {
+  margin: 60px 48px 0 48px;
+}
+
+.container .info .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .info .context:nth-child(2) {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.container .info .context:nth-child(2) .text {
+  margin-left: 50px;
+}
+
+.container .info .context .text h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+.container .info .context .text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #667085;
+}
+
+.container .info .context .text a {
+  color: #0066FF;
+}
+
+.container .info .context img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.container .contextAleph {
+  margin-top: 72px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+
+.container .contextAleph h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.container .contextAleph p {
+  margin-top: 20px;
+  margin-bottom: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #667085;
+}
+
+.container .contextAleph p a {
+  color: #667085;
+}
+
+.container .contextAleph .imgContextAleph {
+  margin-bottom: 56px;
+}
+
+.container .map {
+  padding-top: 72px;
+  text-align: center;
+}
+
+.container .map h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+}
+
+.container .map p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: #667085;
+}
+
+.container .value {
+  margin-top: 30px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  text-align: center;
+  background: #101828;
+}
+
+.container .value h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  color: #ffffff;
+}
+
+.container .value p {
+  margin-top: 12px;
+  margin-bottom: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #e4e7ec;
+}
+
+.container .value .rowImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .value .rowImg img:nth-child(2) {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.container .value .rowImg img {
+  width: 30%;
+}
+
+.container .contacts {
+  margin: 72px 48px;
+  text-align: center;
+}
+
+.container .contacts h1 {
+  padding-top: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.container .contacts p {
+  padding-top: 12px;
+  padding-bottom: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.container .contacts a {
+  margin-right: 48px;
+}
+
+.container .contacts a img {
+  width: 15%;
+}
+
+.container .contacts a img:nth-child(5) {
+  height: 10%;
+}
+
+.container .vacancy {
+  padding: 72px 48px;
+}
+
+.container .vacancy h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+}
+
+.container .vacancy h2 {
+  padding-bottom: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.container .vacancy h6 {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.container .vacancy p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 38px;
+  color: #667085;
+}
+
+.container .vacancy ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .vacancy ul li {
+  margin-bottom: 57px;
+}
+
+.container .vacancy ul li .more {
+  margin-top: 20px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.container .vacancy ul li:last-child {
+  margin-bottom: 0;
+}
+
+.container .write {
+  margin: 72px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #0075ff;
+}
+
+.container .write .writeContext {
+  margin-left: 48px;
+}
+
+.container .write .writeContext h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  color: #f9f9f9;
+}
+
+.container .write .writeContext p {
+  margin-top: 24px;
+  margin-bottom: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(249, 249, 249, 0.7);
+}
+
+.container .write .writeContext a {
+  padding: 16px 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #f9f9f9;
+  background: #fa0c62;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.container .write .writeImg {
+  padding: 72px 48px 72px 0;
+  width: 45%;
+}
+
+.container .foter {
+  margin: 72px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .foter a {
+  text-decoration: none;
+}
+
+.container .foter a:nth-child(1) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #344054;
+}
+
+.container .foter a:nth-child(2) {
+  margin-left: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #98a2b3;
+}
+/*# sourceMappingURL=style.css.map */

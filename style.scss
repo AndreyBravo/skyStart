@@ -1,0 +1,328 @@
+%more {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  a:nth-child(1) {
+    margin-right: 12px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #0066ff;
+  }
+  a:nth-child(2) {
+    display: flex;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 48px;
+    .footer-left {
+      display: flex;
+      .lang {
+        margin: 16px 32px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        a {
+          color: #0066FF;
+          &:first-child {
+            margin-right: 12px;
+            color: #98a2b3;
+            text-decoration: none;
+          }
+        }
+      }
+      button {
+        padding: 12px 16px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        border: 1px solid #0075ff;
+        border-radius: 8px;
+        color: #0075ff;
+        cursor: pointer;
+      }
+    }
+  }
+  .info {
+    margin: 60px 48px 0 48px;
+
+    .context {
+      display: flex;
+      align-items: center;
+      &:nth-child(2) {
+        margin-top: 130px;
+        margin-bottom: 130px;
+        .text {
+          margin-left: 50px;
+        }
+      }
+
+      .text {
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 3.5em;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.5em;
+          color: #667085;
+        }
+        a{
+          color: #0066FF;
+        }
+      }
+      img {
+        width: 50%;
+        border-radius: 20px;
+      }
+    }
+  }
+  .contextAleph {
+    margin-top: 72px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    text-align: center;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+    }
+    p {
+      margin-top: 20px;
+      margin-bottom: 56px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      color: #667085;
+      a {
+        color: #667085;
+      }
+    }
+    .imgContextAleph {
+      margin-bottom: 56px;
+    }
+    .more {
+      @extend %more;
+    }
+  }
+  .map {
+    padding-top: 72px;
+    text-align: center;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 68px;
+    }
+    p {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      color: #667085;
+    }
+  }
+  .value {
+    margin-top: 30px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    text-align: center;
+    background: #101828;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 68px;
+      color: #ffffff;
+    }
+    p {
+      margin-top: 12px;
+      margin-bottom: 48px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      color: #e4e7ec;
+    }
+    .rowImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img:nth-child(2) {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+      img {
+        width: 30%;
+      }
+    }
+  }
+  .contacts {
+    margin: 72px 48px;
+    text-align: center;
+    h1 {
+      padding-top: 48px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+    }
+    p {
+      padding-top: 12px;
+      padding-bottom: 30px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    a {
+      margin-right: 48px;
+      img {
+        width: 15%;
+        &:nth-child(5) {
+          height: 10%;
+        }
+      }
+    }
+  }
+  .vacancy {
+    padding: 72px 48px;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 68px;
+    }
+    h2 {
+      padding-bottom: 16px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+    }
+    h6 {
+      padding-top: 20px;
+      padding-bottom: 48px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 38px;
+      color: #667085;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-bottom: 57px;
+        .more {
+          @extend %more;
+          margin-top: 20px;
+          justify-content: left;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .write {
+    margin: 72px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0075ff;
+    .writeContext {
+      margin-left: 48px;
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+        color: #f9f9f9;
+      }
+      p {
+        margin-top: 24px;
+        margin-bottom: 56px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        color: rgba(249, 249, 249, 0.7);
+      }
+      a {
+        padding: 16px 32px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: #f9f9f9;
+        background: #fa0c62;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    }
+    .writeImg {
+      padding: 72px 48px 72px 0;
+      width: 45%;
+      img {
+      }
+    }
+  }
+  .foter {
+    margin: 72px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      &:nth-child(1) {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #344054;
+      }
+      &:nth-child(2) {
+        margin-left: 24px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #98a2b3;
+      }
+    }
+  }
+}
