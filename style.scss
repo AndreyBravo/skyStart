@@ -20,12 +20,24 @@
   margin: 0;
   padding: 0;
 }
-.container {
+.containerfull {
+  .value {
+    margin-top: 30px;
+    margin-bottom: 72px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    text-align: center;
+    background: #101828;
+  }
+  .write {
+    background: #0075ff;
+    margin-top: 72px;
+  }
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 16px 48px;
+    padding: 16px 32px;
     .navbar-left {
       display: flex;
       .lang {
@@ -58,282 +70,6 @@
       }
     }
   }
-  .info {
-    margin: 60px 48px 0 48px;
-
-    .context {
-      display: flex;
-      align-items: center;
-      &:nth-child(2) {
-        margin-top: 130px;
-        margin-bottom: 130px;
-        .text {
-          margin-left: 50px;
-        }
-      }
-
-      .text {
-        h1 {
-          font-family: "Inter";
-          font-style: normal;
-          font-weight: bold;
-          font-size: 3.5em;
-        }
-        p {
-          font-family: "Inter";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 1.5em;
-          color: #667085;
-        }
-        a {
-          color: #0066ff;
-        }
-      }
-      img {
-        width: 50%;
-        border-radius: 20px;
-      }
-    }
-  }
-  .contextAleph {
-    margin-top: 72px;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    text-align: center;
-    .contextValue {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 32px;
-      margin-right: 32px;
-      margin-bottom: 56px;
-      background: #101828;
-      border-radius: 16px;
-      .content {
-        &:nth-child(2){
-          margin-left: 250px;
-          margin-right: 250px;
-        }
-      }
-
-      h1 {
-        padding-top: 64px;
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 60px;
-        color: #ffffff;
-        margin-bottom: 12px;
-      }
-      h4 {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        color: #e4e7ec;
-        padding-bottom: 64px;
-      }
-    }
-    h1 {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-    }
-    p {
-      margin-top: 20px;
-      margin-bottom: 56px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      color: #667085;
-      a {
-        color: #667085;
-      }
-    }
-    .imgContextAleph {
-      margin-bottom: 56px;
-    }
-    .more {
-      @extend %more;
-    }
-  }
-  .map {
-    padding-top: 72px;
-    text-align: center;
-    h1 {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 68px;
-    }
-    p {
-      margin-top: 20px;
-      margin-bottom: 40px;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 36px;
-      color: #667085;
-    }
-  }
-  .value {
-    margin-top: 30px;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    text-align: center;
-    background: #101828;
-    h1 {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 68px;
-      color: #ffffff;
-    }
-    p {
-      margin-top: 12px;
-      margin-bottom: 48px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      color: #e4e7ec;
-    }
-    .rowImg {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img:nth-child(2) {
-        margin-left: 32px;
-        margin-right: 32px;
-      }
-      img {
-        width: 30%;
-      }
-    }
-  }
-  .contacts {
-    margin: 72px 48px;
-    text-align: center;
-    h1 {
-      padding-top: 48px;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-    }
-    p {
-      padding-top: 12px;
-      padding-bottom: 30px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-    }
-    a {
-      margin-right: 48px;
-      img {
-        width: 15%;
-        &:nth-child(5) {
-          height: 10%;
-        }
-      }
-    }
-  }
-  .vacancy {
-    padding: 72px 48px;
-    h1 {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 68px;
-    }
-    h2 {
-      padding-bottom: 16px;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-    }
-    h6 {
-      padding-top: 20px;
-      padding-bottom: 48px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-    }
-    p {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 36px;
-      line-height: 38px;
-      color: #667085;
-    }
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      li {
-        margin-bottom: 57px;
-        .more {
-          @extend %more;
-          margin-top: 20px;
-          justify-content: left;
-        }
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-  .write {
-    margin: 72px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #0075ff;
-    .writeContext {
-      margin-left: 48px;
-      h1 {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 68px;
-        color: #f9f9f9;
-      }
-      p {
-        margin-top: 24px;
-        margin-bottom: 56px;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 32px;
-        color: rgba(249, 249, 249, 0.7);
-      }
-      a {
-        padding: 16px 32px;
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        color: #f9f9f9;
-        background: #fa0c62;
-        border-radius: 8px;
-        text-decoration: none;
-      }
-    }
-    .writeImg {
-      padding: 72px 48px 72px 0;
-      width: 45%;
-      img {
-      }
-    }
-  }
   .foter {
     margin: 72px 32px;
     display: flex;
@@ -357,6 +93,493 @@
         line-height: 16px;
         color: #98a2b3;
       }
+    }
+  }
+  .container {
+    margin: auto 48px;
+
+    .info {
+      width: 100%;
+      margin-top: 60px;
+      .context {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(2) {
+          display: flex;
+          padding: 130px 0;
+        }
+        .text {
+          width: 617px;
+          h1 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 68px;
+          }
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 38px;
+            color: #667085;
+          }
+          a {
+            color: #0066ff;
+          }
+        }
+        .img {
+          width: 744px;
+          height: 566px;
+          img {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .contextAleph {
+      margin-top: 72px;
+      padding-top: 72px;
+      padding-bottom: 72px;
+      text-align: center;
+      .contextValue {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 56px;
+        background: #101828;
+        border-radius: 16px;
+        .content {
+          width: 437px;
+          &:nth-child(2) {
+            margin: 0 32px;
+          }
+        }
+
+        h1 {
+          padding-top: 64px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 60px;
+          color: #ffffff;
+          margin-bottom: 12px;
+        }
+        h4 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          color: #e4e7ec;
+          padding-bottom: 64px;
+        }
+      }
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+      }
+      p {
+        margin-top: 20px;
+        margin-bottom: 56px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #667085;
+        a {
+          color: #667085;
+        }
+      }
+      .imgContextAleph {
+        margin-bottom: 56px;
+      }
+      .more {
+        @extend %more;
+      }
+    }
+    .map {
+      padding-top: 72px;
+      text-align: center;
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+      }
+      p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        color: #667085;
+      }
+      img {
+        width: 848px;
+      }
+    }
+    .valuecontainer {
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+        color: #ffffff;
+      }
+      p {
+        margin-top: 12px;
+        margin-bottom: 48px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #e4e7ec;
+      }
+      .rowImg {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          color: #101828;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 38px;
+          color: #344054;
+        }
+        .rowcontent {
+          width: 480px;
+          padding-top: 48px;
+          padding-left: 32px;
+          border-radius: 20px;
+
+          text-align: left;
+          &:nth-child(1) {
+            background: #fef0c7;
+          }
+          &:nth-child(2) {
+            background: #d1e9ff;
+            margin: 0 32px;
+          }
+          &:nth-child(3) {
+            background: #d1fadf;
+          }
+        }
+      }
+    }
+    .contacts {
+      margin: 72px 0;
+      text-align: center;
+      h1 {
+        padding-top: 48px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+      }
+      p {
+        padding-top: 12px;
+        padding-bottom: 30px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #667085;
+      }
+      .rowcontacts {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        a {
+          margin-right: 48px;
+        }
+      }
+    }
+    .vacancy {
+      margin-top: 192px;
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+      }
+      h2 {
+        padding-bottom: 16px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+      }
+      h6 {
+        padding-top: 20px;
+        padding-bottom: 48px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 38px;
+        color: #667085;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin-bottom: 57px;
+          .more {
+            @extend %more;
+            margin-top: 20px;
+            justify-content: left;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .writecontainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .writeContext {
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 68px;
+          color: #f9f9f9;
+        }
+        p {
+          margin-top: 24px;
+          margin-bottom: 56px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 32px;
+          color: rgba(249, 249, 249, 0.7);
+        }
+        a {
+          padding: 16px 32px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          color: #f9f9f9;
+          background: #fa0c62;
+          border-radius: 8px;
+          text-decoration: none;
+        }
+      }
+      .writeImg {
+        padding: 72px 48px 72px 0;
+        width: 45%;
+        img {
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1921px) {
+  .containerfull {
+    width: 1920px;
+    .container {
+      margin: auto 208px;
+    }
+  }
+}
+@media screen and (max-width: 1601px) {
+  .containerfull {
+    width: 1600px;
+    .container {
+      margin: auto 48px;
+    }
+  }
+}
+@media screen and (max-width: 1345px) {
+  .containerfull {
+    width: 1344px;
+    .container {
+      margin: auto 32px;
+      .info {
+        .context {
+          .text {
+            width: 523px;
+          }
+          .img {
+            width: 631px;
+            height: 480px;
+            img {
+              width: 631px;
+              height: 480px;
+            }
+          }
+        }
+      }
+      .valuecontainer {
+        .rowImg {
+          .rowcontent {
+            width: 405px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1141px) {
+  .containerfull {
+    width: 1140px;
+    .container {
+      margin: auto 32px;
+      .info {
+        .context {
+          .text {
+            width: 523px;
+          }
+          .img {
+            width: 530px;
+            height: 430px;
+            img {
+              width: 530px;
+              height: 430px;
+            }
+          }
+        }
+      }
+      .valuecontainer {
+        .rowImg {
+          flex-wrap: wrap;
+          .rowcontent {
+            &:nth-child(1) {
+              width: 100%;
+            }
+            &:nth-child(2) {
+              width: 496px;
+              margin: 20px 20px 0 0;
+            }
+            &:nth-child(3) {
+              width: 496px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      .writecontainer {
+        .writeImg {
+          width: 530px;
+          margin: 0;
+          padding-right: 0;
+          padding-left: 30px;
+          img {
+            width: 530px;
+          }
+        }
+      }
+      .contacts {
+        .rowcontacts {
+          flex-wrap: wrap;
+          a {
+            width: 25%;
+            &:nth-child(4) {
+              margin-top: 25px;
+            }
+
+            &:nth-child(5) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .containerfull {
+    width: 768px;
+
+    .container {
+      margin: auto 85px;
+      .info {
+        margin-top: 48px;
+
+        .context {
+          flex-wrap: wrap;
+          justify-content: center;
+          &:nth-child(2){
+            display: flex;
+            flex-direction: row-reverse;
+            .text{
+              order: 1;
+            }
+          }
+          .text {
+            width: 480px; 
+            h1 {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: bold;
+              font-size: 42px;
+              line-height: 42px;
+            }
+            p {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 28px;
+              color: #667085;
+            }
+            a {
+              color: #0066ff;
+            }
+          }
+          .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 598px;
+            height: 452px;
+            img {
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .containerfull {
+    width: 576px;
+    .container {
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .containerfull {
+    width: 360px;
+    .container {
     }
   }
 }

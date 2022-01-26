@@ -1,4 +1,4 @@
-.container .contextAleph .more, .container .vacancy ul li .more {
+.containerfull .container .contextAleph .more, .containerfull .container .vacancy ul li .more {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -9,7 +9,7 @@
           justify-content: center;
 }
 
-.container .contextAleph .more a:nth-child(1), .container .vacancy ul li .more a:nth-child(1) {
+.containerfull .container .contextAleph .more a:nth-child(1), .containerfull .container .vacancy ul li .more a:nth-child(1) {
   margin-right: 12px;
   font-family: "Inter";
   font-style: normal;
@@ -18,7 +18,7 @@
   color: #0066ff;
 }
 
-.container .contextAleph .more a:nth-child(2), .container .vacancy ul li .more a:nth-child(2) {
+.containerfull .container .contextAleph .more a:nth-child(2), .containerfull .container .vacancy ul li .more a:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,21 @@
   padding: 0;
 }
 
-.container .navbar {
+.containerfull .value {
+  margin-top: 30px;
+  margin-bottom: 72px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  text-align: center;
+  background: #101828;
+}
+
+.containerfull .write {
+  background: #0075ff;
+  margin-top: 72px;
+}
+
+.containerfull .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,16 +53,16 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 16px 48px;
+  padding: 16px 32px;
 }
 
-.container .navbar .navbar-left {
+.containerfull .navbar .navbar-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container .navbar .navbar-left .lang {
+.containerfull .navbar .navbar-left .lang {
   margin: 16px 32px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -57,17 +71,17 @@
   line-height: 22px;
 }
 
-.container .navbar .navbar-left .lang a {
+.containerfull .navbar .navbar-left .lang a {
   color: #0066ff;
 }
 
-.container .navbar .navbar-left .lang a:first-child {
+.containerfull .navbar .navbar-left .lang a:first-child {
   margin-right: 12px;
   color: #98a2b3;
   text-decoration: none;
 }
 
-.container .navbar .navbar-left button {
+.containerfull .navbar .navbar-left button {
   padding: 12px 16px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -80,341 +94,7 @@
   cursor: pointer;
 }
 
-.container .info {
-  margin: 60px 48px 0 48px;
-}
-
-.container .info .context {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container .info .context:nth-child(2) {
-  margin-top: 130px;
-  margin-bottom: 130px;
-}
-
-.container .info .context:nth-child(2) .text {
-  margin-left: 50px;
-}
-
-.container .info .context .text h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 3.5em;
-}
-
-.container .info .context .text p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5em;
-  color: #667085;
-}
-
-.container .info .context .text a {
-  color: #0066ff;
-}
-
-.container .info .context img {
-  width: 50%;
-  border-radius: 20px;
-}
-
-.container .contextAleph {
-  margin-top: 72px;
-  padding-top: 72px;
-  padding-bottom: 72px;
-  text-align: center;
-}
-
-.container .contextAleph .contextValue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 56px;
-  background: #101828;
-  border-radius: 16px;
-}
-
-.container .contextAleph .contextValue .content:nth-child(2) {
-  margin-left: 250px;
-  margin-right: 250px;
-}
-
-.container .contextAleph .contextValue h1 {
-  padding-top: 64px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-
-.container .contextAleph .contextValue h4 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  color: #e4e7ec;
-  padding-bottom: 64px;
-}
-
-.container .contextAleph h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-}
-
-.container .contextAleph p {
-  margin-top: 20px;
-  margin-bottom: 56px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  color: #667085;
-}
-
-.container .contextAleph p a {
-  color: #667085;
-}
-
-.container .contextAleph .imgContextAleph {
-  margin-bottom: 56px;
-}
-
-.container .map {
-  padding-top: 72px;
-  text-align: center;
-}
-
-.container .map h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 68px;
-}
-
-.container .map p {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  color: #667085;
-}
-
-.container .value {
-  margin-top: 30px;
-  padding-top: 72px;
-  padding-bottom: 72px;
-  text-align: center;
-  background: #101828;
-}
-
-.container .value h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 68px;
-  color: #ffffff;
-}
-
-.container .value p {
-  margin-top: 12px;
-  margin-bottom: 48px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  color: #e4e7ec;
-}
-
-.container .value .rowImg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container .value .rowImg img:nth-child(2) {
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
-.container .value .rowImg img {
-  width: 30%;
-}
-
-.container .contacts {
-  margin: 72px 48px;
-  text-align: center;
-}
-
-.container .contacts h1 {
-  padding-top: 48px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-}
-
-.container .contacts p {
-  padding-top: 12px;
-  padding-bottom: 30px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-}
-
-.container .contacts a {
-  margin-right: 48px;
-}
-
-.container .contacts a img {
-  width: 15%;
-}
-
-.container .contacts a img:nth-child(5) {
-  height: 10%;
-}
-
-.container .vacancy {
-  padding: 72px 48px;
-}
-
-.container .vacancy h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 68px;
-}
-
-.container .vacancy h2 {
-  padding-bottom: 16px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-}
-
-.container .vacancy h6 {
-  padding-top: 20px;
-  padding-bottom: 48px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-}
-
-.container .vacancy p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 38px;
-  color: #667085;
-}
-
-.container .vacancy ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container .vacancy ul li {
-  margin-bottom: 57px;
-}
-
-.container .vacancy ul li .more {
-  margin-top: 20px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.container .vacancy ul li:last-child {
-  margin-bottom: 0;
-}
-
-.container .write {
-  margin: 72px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #0075ff;
-}
-
-.container .write .writeContext {
-  margin-left: 48px;
-}
-
-.container .write .writeContext h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 68px;
-  color: #f9f9f9;
-}
-
-.container .write .writeContext p {
-  margin-top: 24px;
-  margin-bottom: 56px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
-  color: rgba(249, 249, 249, 0.7);
-}
-
-.container .write .writeContext a {
-  padding: 16px 32px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  color: #f9f9f9;
-  background: #fa0c62;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-.container .write .writeImg {
-  padding: 72px 48px 72px 0;
-  width: 45%;
-}
-
-.container .foter {
+.containerfull .foter {
   margin: 72px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,11 +107,11 @@
           justify-content: space-between;
 }
 
-.container .foter a {
+.containerfull .foter a {
   text-decoration: none;
 }
 
-.container .foter a:nth-child(1) {
+.containerfull .foter a:nth-child(1) {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -439,7 +119,7 @@
   color: #344054;
 }
 
-.container .foter a:nth-child(2) {
+.containerfull .foter a:nth-child(2) {
   margin-left: 24px;
   font-family: "Roboto";
   font-style: normal;
@@ -447,5 +127,556 @@
   font-size: 12px;
   line-height: 16px;
   color: #98a2b3;
+}
+
+.containerfull .container {
+  margin: auto 48px;
+}
+
+.containerfull .container .info {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.containerfull .container .info .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerfull .container .info .context:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 130px 0;
+}
+
+.containerfull .container .info .context .text {
+  width: 617px;
+}
+
+.containerfull .container .info .context .text h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+}
+
+.containerfull .container .info .context .text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 38px;
+  color: #667085;
+}
+
+.containerfull .container .info .context .text a {
+  color: #0066ff;
+}
+
+.containerfull .container .info .context .img {
+  width: 744px;
+  height: 566px;
+}
+
+.containerfull .container .info .context .img img {
+  border-radius: 20px;
+}
+
+.containerfull .container .contextAleph {
+  margin-top: 72px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+
+.containerfull .container .contextAleph .contextValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 56px;
+  background: #101828;
+  border-radius: 16px;
+}
+
+.containerfull .container .contextAleph .contextValue .content {
+  width: 437px;
+}
+
+.containerfull .container .contextAleph .contextValue .content:nth-child(2) {
+  margin: 0 32px;
+}
+
+.containerfull .container .contextAleph .contextValue h1 {
+  padding-top: 64px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.containerfull .container .contextAleph .contextValue h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #e4e7ec;
+  padding-bottom: 64px;
+}
+
+.containerfull .container .contextAleph h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.containerfull .container .contextAleph p {
+  margin-top: 20px;
+  margin-bottom: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #667085;
+}
+
+.containerfull .container .contextAleph p a {
+  color: #667085;
+}
+
+.containerfull .container .contextAleph .imgContextAleph {
+  margin-bottom: 56px;
+}
+
+.containerfull .container .map {
+  padding-top: 72px;
+  text-align: center;
+}
+
+.containerfull .container .map h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+}
+
+.containerfull .container .map p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: #667085;
+}
+
+.containerfull .container .map img {
+  width: 848px;
+}
+
+.containerfull .container .valuecontainer h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  color: #ffffff;
+}
+
+.containerfull .container .valuecontainer p {
+  margin-top: 12px;
+  margin-bottom: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #e4e7ec;
+}
+
+.containerfull .container .valuecontainer .rowImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containerfull .container .valuecontainer .rowImg h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #101828;
+}
+
+.containerfull .container .valuecontainer .rowImg p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 38px;
+  color: #344054;
+}
+
+.containerfull .container .valuecontainer .rowImg .rowcontent {
+  width: 480px;
+  padding-top: 48px;
+  padding-left: 32px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
+  background: #fef0c7;
+}
+
+.containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
+  background: #d1e9ff;
+  margin: 0 32px;
+}
+
+.containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
+  background: #d1fadf;
+}
+
+.containerfull .container .contacts {
+  margin: 72px 0;
+  text-align: center;
+}
+
+.containerfull .container .contacts h1 {
+  padding-top: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.containerfull .container .contacts p {
+  padding-top: 12px;
+  padding-bottom: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #667085;
+}
+
+.containerfull .container .contacts .rowcontacts {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containerfull .container .contacts .rowcontacts a {
+  margin-right: 48px;
+}
+
+.containerfull .container .vacancy {
+  margin-top: 192px;
+}
+
+.containerfull .container .vacancy h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+}
+
+.containerfull .container .vacancy h2 {
+  padding-bottom: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.containerfull .container .vacancy h6 {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.containerfull .container .vacancy p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 38px;
+  color: #667085;
+}
+
+.containerfull .container .vacancy ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.containerfull .container .vacancy ul li {
+  margin-bottom: 57px;
+}
+
+.containerfull .container .vacancy ul li .more {
+  margin-top: 20px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.containerfull .container .vacancy ul li:last-child {
+  margin-bottom: 0;
+}
+
+.containerfull .container .writecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containerfull .container .writecontainer .writeContext h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  color: #f9f9f9;
+}
+
+.containerfull .container .writecontainer .writeContext p {
+  margin-top: 24px;
+  margin-bottom: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(249, 249, 249, 0.7);
+}
+
+.containerfull .container .writecontainer .writeContext a {
+  padding: 16px 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #f9f9f9;
+  background: #fa0c62;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.containerfull .container .writecontainer .writeImg {
+  padding: 72px 48px 72px 0;
+  width: 45%;
+}
+
+@media screen and (max-width: 1921px) {
+  .containerfull {
+    width: 1920px;
+  }
+  .containerfull .container {
+    margin: auto 208px;
+  }
+}
+
+@media screen and (max-width: 1601px) {
+  .containerfull {
+    width: 1600px;
+  }
+  .containerfull .container {
+    margin: auto 48px;
+  }
+}
+
+@media screen and (max-width: 1345px) {
+  .containerfull {
+    width: 1344px;
+  }
+  .containerfull .container {
+    margin: auto 32px;
+  }
+  .containerfull .container .info .context .text {
+    width: 523px;
+  }
+  .containerfull .container .info .context .img {
+    width: 631px;
+    height: 480px;
+  }
+  .containerfull .container .info .context .img img {
+    width: 631px;
+    height: 480px;
+  }
+  .containerfull .container .valuecontainer .rowImg .rowcontent {
+    width: 405px;
+  }
+}
+
+@media screen and (max-width: 1141px) {
+  .containerfull {
+    width: 1140px;
+  }
+  .containerfull .container {
+    margin: auto 32px;
+  }
+  .containerfull .container .info .context .text {
+    width: 523px;
+  }
+  .containerfull .container .info .context .img {
+    width: 530px;
+    height: 430px;
+  }
+  .containerfull .container .info .context .img img {
+    width: 530px;
+    height: 430px;
+  }
+  .containerfull .container .valuecontainer .rowImg {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
+    width: 100%;
+  }
+  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
+    width: 496px;
+    margin: 20px 20px 0 0;
+  }
+  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
+    width: 496px;
+    margin-top: 20px;
+  }
+  .containerfull .container .writecontainer .writeImg {
+    width: 530px;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 30px;
+  }
+  .containerfull .container .writecontainer .writeImg img {
+    width: 530px;
+  }
+  .containerfull .container .contacts .rowcontacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .containerfull .container .contacts .rowcontacts a {
+    width: 25%;
+  }
+  .containerfull .container .contacts .rowcontacts a:nth-child(4) {
+    margin-top: 25px;
+  }
+  .containerfull .container .contacts .rowcontacts a:nth-child(5) {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .containerfull {
+    width: 768px;
+  }
+  .containerfull .container {
+    margin: auto 85px;
+  }
+  .containerfull .container .info {
+    margin-top: 48px;
+  }
+  .containerfull .container .info .context {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerfull .container .info .context:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .containerfull .container .info .context:nth-child(2) .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .containerfull .container .info .context .text {
+    width: 480px;
+  }
+  .containerfull .container .info .context .text h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .containerfull .container .info .context .text p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #667085;
+  }
+  .containerfull .container .info .context .text a {
+    color: #0066ff;
+  }
+  .containerfull .container .info .context .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 598px;
+    height: 452px;
+  }
+  .containerfull .container .info .context .img img {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containerfull {
+    width: 576px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .containerfull {
+    width: 360px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
