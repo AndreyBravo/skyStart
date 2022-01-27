@@ -628,8 +628,18 @@
 }
 
 @media screen and (max-width: 769px) {
+  .containerfull .navbar {
+    padding: 16px;
+  }
   .containerfull .navbar img:first-child {
     width: 166px;
+  }
+  .containerfull .navbar .navbar-left img {
+    width: 32px;
+  }
+  .containerfull .navbar .navbar-left .lang {
+    margin: 0;
+    margin-right: 20px;
   }
   .containerfull .navbar .navbar-left .vacancy {
     display: none;
