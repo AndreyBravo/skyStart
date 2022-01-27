@@ -14,9 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Lending</title>
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <div class="containerfull">
       <div class="navbar">
         <img src="./image/Team_Horizontal.svg" alt="logo" />
@@ -56,15 +61,15 @@
           <div class="context">
             <div class="text">
               <p>
-                В 2021 мы стали частью <a href="#">Aleph Holding</a>  — глобального конгломерата
-                на рынке цифровой рекламы с офисами в 72 странах,
-                стратегического партнера Twitter, Facebook и TikTok.
+                В 2021 мы стали частью <a href="#">Aleph Holding</a> —
+                глобального конгломерата на рынке цифровой рекламы с офисами в
+                72 странах, стратегического партнера Twitter, Facebook и TikTok.
               </p>
             </div>
             <div class="img"><img src="./image/aleph.png" alt="whowe" /></div>
           </div>
         </div>
-        <div class="contextAleph">
+        <div id="target" class="contextAleph">
           <h1>Aleph Holding в цифрах</h1>
           <p>
             Aleph является материнской компанией для <a href="">Httpool</a>,
@@ -73,20 +78,18 @@
           </p>
           <div class="contextValue">
             <div class="content">
-              <h1 class="value" akhi="20">0</h1>
+              <h1 id="value"  akhi="20">0</h1>
               <h4>Медиа Платформ</h4>
             </div>
             <div class="content">
-              <h1 class="value" akhi="1000">0</h1>
+              <h1 class="value-number" class="value-number1" akhi="1000">0</h1>
               <h4>Сотрудников</h4>
             </div>
             <div class="content">
-              <h1 class="value" akhi="4000">0</h1>
+              <h1 id="value"  akhi="4000">0</h1>
               <h4>Местных Партнеров</h4>
             </div>
           </div>
-
-          
         </div>
         <div class="more">
           <a href="#">Подробнее об Aleph Holding</a>
