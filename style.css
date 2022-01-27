@@ -24,6 +24,11 @@
   display: flex;
 }
 
+.containerfull .container .more a:nth-child(2) img, .containerfull .container .vacancy ul li .more a:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -232,7 +237,7 @@
 }
 
 .containerfull .container .contextAleph .contextValue .content {
-  width: 437px;
+  width: 33.3%;
 }
 
 .containerfull .container .contextAleph .contextValue .content:nth-child(2) {
@@ -644,8 +649,12 @@
   .containerfull .navbar .navbar-left .vacancy {
     display: none;
   }
+  .containerfull .value {
+    margin: 60px 0 0 0;
+    padding: 48px 0;
+  }
   .containerfull .container {
-    margin: auto 24px;
+    margin: auto 16px;
   }
   .containerfull .container .info {
     margin-top: 48px;
@@ -670,8 +679,8 @@
     padding: 0;
   }
   .containerfull .container .info .context .text {
-    width: 80%;
-    margin-bottom: 28px;
+    width: 65%;
+    margin-bottom: 40px;
   }
   .containerfull .container .info .context .text h1 {
     font-family: "Inter";
@@ -679,6 +688,7 @@
     font-weight: bold;
     font-size: 42px;
     line-height: 42px;
+    margin-bottom: 20px;
   }
   .containerfull .container .info .context .text p {
     font-family: "Inter";
@@ -702,7 +712,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 95px;
-    width: 100%;
+    width: 81%;
   }
   .containerfull .container .info .context .img img {
     border-radius: 20px;
@@ -710,7 +720,9 @@
   .containerfull .container .contextAleph {
     background: #101828;
     border-radius: 16px;
+    margin: 0;
     margin-bottom: 32px;
+    padding: 64px;
   }
   .containerfull .container .contextAleph h1 {
     font-family: "Inter";
@@ -720,7 +732,6 @@
     color: #f9f9f9;
   }
   .containerfull .container .contextAleph p {
-    padding: 0px 64px;
     margin-bottom: 0;
     font-family: "Roboto";
     font-style: normal;
@@ -733,9 +744,35 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
+    padding: 0;
+  }
+  .containerfull .container .contextAleph .contextValue .content {
+    width: auto;
+  }
+  .containerfull .container .contextAleph .contextValue .content:nth-child(2) {
+    margin: 0;
+  }
+  .containerfull .container .contextAleph .contextValue h1 {
+    padding-top: 32px;
   }
   .containerfull .container .contextAleph .contextValue h4 {
     padding: 0;
+  }
+  .containerfull .container .more {
+    width: 40%;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerfull .container .more a:first-child {
+    font-size: 17px;
+  }
+  .containerfull .container .more a:last-child {
+    width: 17px;
+  }
+  .containerfull .container .map {
+    padding-top: 97px;
   }
   .containerfull .container .map h1 {
     font-family: "Inter";
@@ -744,39 +781,98 @@
     font-size: 42px;
   }
   .containerfull .container .map p {
+    margin-top: 16px;
+    margin-bottom: 56px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
   }
+  .containerfull .container .valuecontainer p {
+    margin: 10px 0 28px 0;
+  }
   .containerfull .container .valuecontainer .rowImg {
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 0px;
+    padding: 32px 24px;
+  }
+  .containerfull .container .valuecontainer .rowImg .rowcontent img {
+    width: 17%;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent h1 {
-    width: 100%;
+    font-size: 24px;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent p {
-    width: 100%;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
-    width: 100%;
+    width: auto;
+    height: 10%;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
-    width: 100%;
+    width: auto;
+    margin: 16px 0;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
-    width: 100%;
+    width: auto;
+    margin: 0;
+  }
+  .containerfull .container .contacts {
+    margin: 48px 0;
+    padding: 48px 32px;
+  }
+  .containerfull .container .contacts h1 {
+    padding: 0;
+  }
+  .containerfull .container .contacts p {
+    padding: 0;
+    margin: 8px 0 24px 0;
+  }
+  .containerfull .container .contacts .rowcontacts {
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .containerfull .container .contacts .rowcontacts a {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  .containerfull .container .contacts .rowcontacts a:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 45%;
+  }
+  .containerfull .container .contacts .rowcontacts a:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 45%;
+  }
+  .containerfull .container .contacts .rowcontacts a:nth-child(3) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 30%;
+  }
+  .containerfull .container .contacts .rowcontacts a:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 30%;
+  }
+  .containerfull .container .contacts .rowcontacts a:nth-child(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    width: 30%;
   }
   .containerfull .container .writecontainer {
     -webkit-box-orient: vertical;
@@ -846,6 +942,33 @@
         -ms-flex-order: 4;
             order: 4;
     width: 50%;
+  }
+  .containerfull .container .map {
+    font-size: 17px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .containerfull .container {
+    margin: auto 16px;
+  }
+  .containerfull .container .info .context .text {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+  .containerfull .container .info .context .img {
+    width: 100%;
+    margin-bottom: 87px;
+  }
+  .containerfull .container .info .context .img:last-child {
+    margin-bottom: 96px;
+  }
+  .containerfull .container .more {
+    width: 90%;
+  }
+  .containerfull .container .more a {
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */
