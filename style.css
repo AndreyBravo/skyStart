@@ -903,6 +903,12 @@
 }
 
 @media screen and (max-width: 576px) {
+  .containerfull .container .info .context .text {
+    width: 100%;
+  }
+  .containerfull .container .info .context .img {
+    width: 100%;
+  }
   .containerfull .container .contacts .rowcontacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

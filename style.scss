@@ -797,6 +797,16 @@
 @media screen and (max-width: 576px) {
   .containerfull {
     .container {
+      .info{
+        .context{
+          .text{
+            width: 100%;
+          }
+          .img{
+            width: 100%;
+          }
+        }
+      }
       .contacts {
         .rowcontacts {
           flex-direction: column;
