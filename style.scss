@@ -40,8 +40,17 @@
     padding: 16px 32px;
     .navbar-left {
       display: flex;
+      align-items: center;
+      a {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #101828;
+        text-decoration: none;
+      }
       .lang {
-        margin: 16px 32px;
+        margin: 0 32px;
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -70,7 +79,7 @@
       }
     }
   }
-  .foter {
+  .footer {
     margin: 72px 32px;
     display: flex;
     align-items: center;
@@ -96,7 +105,8 @@
     }
   }
   .container {
-    margin: auto 48px;
+    margin: 0 auto;
+    max-width: 1504px;
 
     .info {
       width: 100%;
@@ -133,6 +143,9 @@
           width: 744px;
           height: 566px;
           img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 20px;
           }
         }
@@ -199,9 +212,9 @@
       .imgContextAleph {
         margin-bottom: 56px;
       }
-      .more {
-        @extend %more;
-      }
+    }
+    .more {
+      @extend %more;
     }
     .map {
       padding-top: 72px;
@@ -361,7 +374,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 72px 0;
       .writeContext {
+        width: 45%;
         h1 {
           font-family: "Inter";
           font-style: normal;
@@ -392,9 +407,9 @@
         }
       }
       .writeImg {
-        padding: 72px 48px 72px 0;
         width: 45%;
         img {
+          width: 100%;
         }
       }
     }
@@ -402,15 +417,28 @@
 }
 @media screen and (max-width: 1921px) {
   .containerfull {
-    
     .container {
       margin: auto 208px;
+      .info {
+        .context {
+          .text {
+            width: 40%;
+          }
+          .img {
+            width: 50%;
+            height: 50%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
     }
   }
 }
 @media screen and (max-width: 1601px) {
   .containerfull {
-    
     .container {
       margin: auto 48px;
     }
@@ -418,28 +446,24 @@
 }
 @media screen and (max-width: 1345px) {
   .containerfull {
-    
     .container {
       margin: auto 32px;
-      .info {
-        .context {
-          .text {
-            width: 523px;
-          }
-          .img {
-            width: 631px;
-            height: 480px;
+
+      .contacts {
+        .rowcontacts {
+          display: flex;
+          align-items: center;
+          a {
             img {
-              width: 631px;
-              height: 480px;
+              width: 100%;
             }
           }
         }
       }
-      .valuecontainer {
-        .rowImg {
-          .rowcontent {
-            width: 405px;
+      .writecontainer {
+        .writeImg {
+          img {
+            width: 100%;
           }
         }
       }
@@ -449,20 +473,18 @@
 
 @media screen and (max-width: 1141px) {
   .containerfull {
-    
     .container {
       margin: auto 32px;
       .info {
         .context {
           .text {
-            width: 523px;
+            height: 100%;
           }
           .img {
-            width: 530px;
-            height: 430px;
+            height: 100%;
             img {
-              width: 530px;
-              height: 430px;
+              width: 100%;
+              height: 100%;
             }
           }
         }
@@ -470,16 +492,17 @@
       .valuecontainer {
         .rowImg {
           flex-wrap: wrap;
+          justify-content: space-between;
           .rowcontent {
             &:nth-child(1) {
               width: 100%;
             }
             &:nth-child(2) {
-              width: 496px;
-              margin: 20px 20px 0 0;
+              width: 45%;
+              margin: 20px 0 0 0;
             }
             &:nth-child(3) {
-              width: 496px;
+              width: 45%;
               margin-top: 20px;
             }
           }
@@ -487,12 +510,12 @@
       }
       .writecontainer {
         .writeImg {
-          width: 530px;
+          width: 50%;
           margin: 0;
           padding-right: 0;
           padding-left: 30px;
           img {
-            width: 530px;
+            width: 100%;
           }
         }
       }
@@ -511,30 +534,32 @@
           }
         }
       }
+      .map {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
 @media screen and (max-width: 769px) {
   .containerfull {
-    
-
     .container {
-      margin: auto 85px;
+      margin: auto 24px;
       .info {
         margin-top: 48px;
 
         .context {
-          flex-wrap: wrap;
-          justify-content: center;
-          &:nth-child(2){
+          flex-direction: column;
+          justify-content: left;
+          &:nth-child(2) {
             display: flex;
-            flex-direction: row-reverse;
-            .text{
-              order: 1;
-            }
+            flex-direction: column-reverse;
+            padding: 0;
           }
           .text {
-            width: 480px; 
+            width: 80%;
+            margin-bottom: 28px;
             h1 {
               font-family: "Inter";
               font-style: normal;
@@ -558,12 +583,104 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 598px;
-            height: 452px;
+            margin-bottom: 95px;
+            width: 100%;
             img {
               border-radius: 20px;
             }
           }
+        }
+      }
+      .contextAleph {
+        background: #101828;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          color: #f9f9f9;
+        }
+        p {
+          padding: 0px 64px;
+          margin-bottom: 0;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+        }
+        .contextValue {
+          flex-direction: column;
+          margin: 0;
+          h4 {
+            padding: 0;
+          }
+        }
+      }
+      .map {
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 42px;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+        }
+      }
+      .valuecontainer {
+        .rowImg {
+          width: 100%;
+          flex-direction: column;
+          .rowcontent {
+            width: 100%;
+            justify-content: center;
+            padding-left: 0px;
+            h1 {
+              width: 100%;
+            }
+            p {
+              width: 100%;
+            }
+            &:nth-child(1) {
+              width: 100%;
+            }
+            &:nth-child(2) {
+              width: 100%;
+            }
+            &:nth-child(3) {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .writecontainer {
+        flex-direction: column;
+        text-align: center;
+        .writeContext {
+          width: 100%;
+
+          h1 {
+            font-size: 42px;
+          }
+          p {
+            width: 100%;
+            font-size: 20px;
+            line-height: 32px;
+          }
+          a {
+            
+            font-size: 16px;
+          }
+        }
+        .writeImg {
+          width: 100%;
+          margin-top: 56px;
+          padding: 0;
         }
       }
     }
@@ -571,14 +688,42 @@
 }
 @media screen and (max-width: 576px) {
   .containerfull {
-    
     .container {
+      .contacts{
+        .rowcontacts{
+          flex-direction: column;
+          a{
+            
+            margin: 0;
+            margin-bottom: 35px;
+            &:nth-child(1){
+              order:1;
+              width: 80%;
+            }
+            &:nth-child(2){
+              order:5;
+              width: 70%;
+            }
+            &:nth-child(3){
+              order:2;
+              width: 60%;
+            }
+            &:nth-child(4){
+              order:3;
+              width: 50%;
+            }
+            &:nth-child(5){
+              order:4;
+              width: 50%;
+            }
+          }
+        }
+      }
     }
   }
 }
 @media screen and (max-width: 360px) {
   .containerfull {
-    
     .container {
     }
   }
