@@ -544,6 +544,20 @@
 }
 @media screen and (max-width: 769px) {
   .containerfull {
+    .navbar{
+      img{
+        &:first-child{
+          width: 166px;
+        }
+      }
+      .navbar-left{
+        .vacancy{
+          display: none;
+        }
+          
+        
+      }
+    }
     .container {
       margin: auto 24px;
       .info {
