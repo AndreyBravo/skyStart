@@ -11,6 +11,7 @@
     font-weight: bold;
     font-size: 22px;
     color: #0066ff;
+    text-decoration: none;
   }
   a:nth-child(2) {
     display: flex;
@@ -304,6 +305,8 @@
     .contacts {
       margin: 72px 0;
       text-align: center;
+      background: #F2F4F7;
+      border-radius: 20px;
       h1 {
         padding-top: 48px;
         font-family: "Inter";
@@ -313,7 +316,7 @@
       }
       p {
         padding-top: 12px;
-        padding-bottom: 30px;
+        
         font-family: "Roboto";
         font-style: normal;
         font-weight: normal;
@@ -321,16 +324,17 @@
         color: #667085;
       }
       .rowcontacts {
-        margin-top: 32px;
+        
         display: flex;
         justify-content: center;
         a {
           margin-right: 48px;
+          padding-top: 28px;
         }
       }
     }
     .vacancy {
-      margin-top: 192px;
+      
       h1 {
         font-family: "Inter";
         font-style: normal;
@@ -351,6 +355,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
+        color: #667085;
       }
       p {
         font-family: "Inter";
@@ -484,16 +489,7 @@
       margin: auto 32px;
       .info {
         .context {
-          .text {
-            height: 100%;
-          }
-          .img {
-            height: 100%;
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
+          
         }
       }
       .valuecontainer {
@@ -527,16 +523,19 @@
         }
       }
       .contacts {
+        
         .rowcontacts {
           flex-wrap: wrap;
+         
+          padding: 0 64px;
           a {
-            width: 25%;
+            
             &:nth-child(4) {
-              margin-top: 25px;
+              
             }
 
             &:nth-child(5) {
-              margin-top: 20px;
+              
             }
           }
         }
@@ -644,6 +643,11 @@
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
+          color: rgba(249, 249, 249, 0.7);
+          a{
+            color: rgba(249, 249, 249, 0.7);
+
+          }
         }
         .contextValue {
           flex-direction: column;
@@ -694,14 +698,19 @@
         }
       }
       .valuecontainer {
+        h1{
+          font-size: 42px;
+        }
         p {
+          font-size: 16px;
           margin: 10px 0 28px 0;
         }
         .rowImg {
           flex-direction: column;
           .rowcontent {
+            border-radius: 16px;
             img {
-              width: 17%;
+              width: 120px;
             }
             h1 {
               font-size: 24px;
@@ -733,36 +742,37 @@
         padding: 48px 32px;
         h1 {
           padding: 0;
+          font-size: 24px;
         }
         p {
           padding: 0;
           margin: 8px 0 24px 0;
+          font-size: 16px;
         }
         .rowcontacts {
           margin: 0;
-          justify-content: space-between;
-          a {
-            margin: 0;
-            margin-bottom: 35px;
-            &:nth-child(1) {
-              order: 1;
-              width: 45%;
+          justify-content: center;
+         
+        }
+      }
+      .vacancy{
+        h1{
+          font-size: 42px;
+        }
+        h6{
+          font-size: 16px;
+          padding-top: 12px;
+          padding-bottom: 36px;
+        }
+        ul{
+          li{
+            h2{
+              font-size: 24px;
             }
-            &:nth-child(2) {
-              order: 2;
-              width: 45%;
-            }
-            &:nth-child(3) {
-              order: 3;
-              width: 30%;
-            }
-            &:nth-child(4) {
-              order: 4;
-              width: 30%;
-            }
-            &:nth-child(5) {
-              order: 5;
-              width: 30%;
+            p{
+              font-size: 24px;
+              line-height: 28px;
+              letter-spacing: -1px;
             }
           }
         }
@@ -789,7 +799,11 @@
           width: 100%;
           margin-top: 56px;
           padding: 0;
+          border-radius: 12px;
         }
+      }
+      .footer{
+        margin: 60px 24px;
       }
     }
   }
@@ -807,35 +821,39 @@
           }
         }
       }
+      .more{
+        width: 90%;
+        a{
+          font-size: 17px;
+        }
+      }
       .contacts {
         .rowcontacts {
           flex-direction: column;
           a {
             margin: 0;
-            margin-bottom: 35px;
-            &:nth-child(1) {
+            padding-top: 33px;
+            &:nth-child(1){
+              padding-top: 0;
               order: 1;
-              width: 80%;
             }
-            &:nth-child(2) {
-              order: 5;
-              width: 70%;
+            &:nth-child(2){
+              order:5;
             }
-            &:nth-child(3) {
-              order: 2;
-              width: 60%;
+            &:nth-child(3){
+              order:2;
             }
-            &:nth-child(4) {
-              order: 3;
-              width: 50%;
+            &:nth-child(4){
+              order:3;
             }
-            &:nth-child(5) {
-              order: 4;
-              width: 50%;
+            &:nth-child(5){
+              order:4;
             }
+            
           }
         }
       }
+      
       .map {
         font-size: 17px;
         width: 100%;
@@ -843,7 +861,7 @@
     }
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
   .containerfull {
     .container {
       margin: auto 16px;
@@ -855,21 +873,24 @@
           }
           .img{
             width: 100%;
-            margin-bottom: 87px;
-            &:last-child{
-              margin-bottom: 96px;
+            margin-bottom: 96px;
+            
+            img{
+              border-radius: 4px;
             }
           }
         }
       }
-      .more{
-        width: 90%;
-        a{
-          font-size: 17px;
-        }
+      .contextAleph{
+        border-radius: 6px;
       }
-      .map{
-        
+      
+      .writecontainer{
+        .writeContext{
+          h1{
+            letter-spacing: -1px;
+          }
+        }
       }
     }
   }
