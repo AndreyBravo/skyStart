@@ -35,6 +35,95 @@
   padding: 0;
 }
 
+.containerfull .context-first {
+  display: none;
+  overflow: hidden;
+  margin-top: 60px;
+  margin-left: 32px;
+}
+
+.containerfull .context-first .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerfull .context-first .context .text h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  margin-bottom: 20px;
+}
+
+.containerfull .context-first .context .text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 38px;
+  color: #667085;
+}
+
+.containerfull .context-first .context .text a {
+  color: #0066ff;
+}
+
+.containerfull .context-first .context .img {
+  width: 50%;
+}
+
+.containerfull .context-first .context .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
+}
+
+.containerfull .info .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerfull .info .context .text h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  margin-bottom: 20px;
+}
+
+.containerfull .info .context .text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 38px;
+  color: #667085;
+}
+
+.containerfull .info .context .text a {
+  color: #0066ff;
+}
+
+.containerfull .info .context .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
+}
+
 .containerfull .value {
   margin-top: 30px;
   margin-bottom: 72px;
@@ -210,13 +299,12 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
+  border-radius: 24px;
 }
 
 .containerfull .container .contextAleph {
-  margin-top: 72px;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  margin-top: 144px;
+  margin-bottom: 56px;
   text-align: center;
 }
 
@@ -232,7 +320,6 @@
           justify-content: center;
   padding-left: 32px;
   padding-right: 32px;
-  margin-bottom: 56px;
   background: #101828;
   border-radius: 16px;
 }
@@ -289,8 +376,12 @@
   margin-bottom: 56px;
 }
 
+.containerfull .container .more {
+  text-decoration: underline;
+}
+
 .containerfull .container .map {
-  padding-top: 72px;
+  margin-top: 144px;
   text-align: center;
 }
 
@@ -302,8 +393,8 @@
 }
 
 .containerfull .container .map p {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 28px;
+  margin-bottom: 75px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -343,6 +434,8 @@
 }
 
 .containerfull .container .valuecontainer .rowImg h1 {
+  margin-top: 36px;
+  margin-bottom: 20px;
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
@@ -351,20 +444,25 @@
 }
 
 .containerfull .container .valuecontainer .rowImg p {
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 38px;
   color: #344054;
+  letter-spacing: -0.0075em;
 }
 
 .containerfull .container .valuecontainer .rowImg .rowcontent {
   width: 480px;
-  padding-top: 48px;
-  padding-left: 32px;
+  padding: 48px 32px;
   border-radius: 20px;
   text-align: left;
+}
+
+.containerfull .container .valuecontainer .rowImg .rowcontent p {
+  margin-bottom: 0;
 }
 
 .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
@@ -381,14 +479,15 @@
 }
 
 .containerfull .container .contacts {
-  margin: 72px 0;
+  margin-top: 72px;
+  margin-bottom: 144px;
+  padding: 48px 32px;
   text-align: center;
   background: #F2F4F7;
   border-radius: 20px;
 }
 
 .containerfull .container .contacts h1 {
-  padding-top: 48px;
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
@@ -496,6 +595,7 @@
   font-weight: bold;
   font-size: 68px;
   color: #f9f9f9;
+  letter-spacing: -2px;
 }
 
 .containerfull .container .writecontainer .writeContext p {
@@ -538,11 +638,13 @@
   }
   .containerfull .container .info .context .img {
     width: 50%;
-    height: 50%;
+    height: 100%;
   }
   .containerfull .container .info .context .img img {
     width: 100%;
-    height: 100%;
+    height: 85%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -553,8 +655,25 @@
 }
 
 @media screen and (max-width: 1345px) {
+  .containerfull .context-first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerfull .context-first .context .img img {
+    border-radius: 20px;
+  }
   .containerfull .container {
     margin: auto 32px;
+  }
+  .containerfull .container .info {
+    margin-top: 0;
+  }
+  .containerfull .container .info .context:first-child {
+    display: none;
+  }
+  .containerfull .container .info .context .img img {
+    border-radius: 20px;
   }
   .containerfull .container .contacts .rowcontacts {
     display: -webkit-box;
@@ -573,8 +692,27 @@
 }
 
 @media screen and (max-width: 1141px) {
+  .containerfull .context-first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerfull .context-first .context .img img {
+    border-radius: 17px;
+  }
   .containerfull .container {
     margin: auto 32px;
+  }
+  .containerfull .container .info .context {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .containerfull .container .info .context .img img {
+    border-radius: 17px;
+  }
+  .containerfull .container .info .context:nth-child(2) .text {
+    padding-left: 16px;
   }
   .containerfull .container .valuecontainer .rowImg {
     -ms-flex-wrap: wrap;
@@ -587,18 +725,20 @@
     width: 100%;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
-    width: 45%;
+    width: 42.99%;
     margin: 20px 0 0 0;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
-    width: 45%;
+    width: 42.99%;
     margin-top: 20px;
   }
+  .containerfull .container .writecontainer .writeContext {
+    width: 49%;
+  }
   .containerfull .container .writecontainer .writeImg {
-    width: 50%;
+    width: 49%;
     margin: 0;
     padding-right: 0;
-    padding-left: 30px;
   }
   .containerfull .container .writecontainer .writeImg img {
     width: 100%;
@@ -614,6 +754,9 @@
 }
 
 @media screen and (max-width: 769px) {
+  .containerfull .context-first {
+    display: none;
+  }
   .containerfull .navbar {
     padding: 16px;
   }
@@ -648,6 +791,11 @@
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+  }
+  .containerfull .container .info .context:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .containerfull .container .info .context:nth-child(2) {
     display: -webkit-box;
@@ -696,7 +844,7 @@
     width: 81%;
   }
   .containerfull .container .info .context .img img {
-    border-radius: 20px;
+    border-radius: 12px;
   }
   .containerfull .container .contextAleph {
     background: #101828;
@@ -757,7 +905,7 @@
     width: 17px;
   }
   .containerfull .container .map {
-    padding-top: 97px;
+    margin-top: 97px;
   }
   .containerfull .container .map h1 {
     font-family: "Inter";
@@ -766,7 +914,7 @@
     font-size: 42px;
   }
   .containerfull .container .map p {
-    margin-top: 16px;
+    margin-top: 18px;
     margin-bottom: 56px;
     font-family: "Inter";
     font-style: normal;
@@ -786,7 +934,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .containerfull .container .valuecontainer .rowImg h1 {
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
   .containerfull .container .valuecontainer .rowImg .rowcontent {
+    padding: 32px 24px;
     border-radius: 16px;
     padding: 32px 24px;
   }
@@ -886,6 +1039,12 @@
   }
   .containerfull .container .info .context .img {
     width: 100%;
+  }
+  .containerfull .container .info .context .img img {
+    border-radius: 6px;
+  }
+  .containerfull .container .contextAleph {
+    border-radius: 6px;
   }
   .containerfull .container .more {
     width: 90%;
