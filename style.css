@@ -125,7 +125,7 @@
 }
 
 .containerfull .value {
-  margin-top: 30px;
+  margin-top: 56px;
   margin-bottom: 72px;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -674,6 +674,9 @@
   }
   .containerfull .container .info .context .img img {
     border-radius: 20px;
+  }
+  .containerfull .container .contextAleph .contextValue {
+    padding: 0 32px;
   }
   .containerfull .container .contacts .rowcontacts {
     display: -webkit-box;

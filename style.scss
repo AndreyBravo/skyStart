@@ -110,7 +110,7 @@
     }
   }
   .value {
-    margin-top: 30px;
+    margin-top: 56px;
     margin-bottom: 72px;
     padding-top: 72px;
     padding-bottom: 72px;
@@ -578,6 +578,12 @@
           }
         }
       }
+      .contextAleph{
+        .contextValue{
+          padding: 0 32px;
+        }
+      }
+      
       .contacts {
         .rowcontacts {
           display: flex;
