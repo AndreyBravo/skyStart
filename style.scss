@@ -74,6 +74,7 @@
       align-items: center;
 
       .text {
+        
         h1 {
           font-family: "Inter";
           font-style: normal;
@@ -115,10 +116,12 @@
     margin-top: 72px;
   }
   .navbar {
+    
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background-color: #fff;
+    z-index: 999;
 
     display: flex;
     align-items: center;

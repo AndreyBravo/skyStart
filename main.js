@@ -22,7 +22,7 @@ window.addEventListener("scroll", function () {
 
 const header = () => {
   window.onscroll = function () {
-    myFunction(), myValue();
+    myFunction(), myValue(), myImg1(), myImg2(), myImg3()
   };
 
   function myFunction() {
@@ -33,6 +33,36 @@ const header = () => {
       myHeader.classList.add("sticky");
     } else {
       myHeader.classList.remove("sticky");
+    }
+  }
+  function myImg1() {
+    var img1 = document.getElementById("img1");
+    var header = document.querySelectorAll(".target-img1");
+    var sticky = header.offsetTop;
+    if (window.pageYOffset > sticky) {
+      img1.classList.add("animate__animated","animate__swing");
+    } else {
+      img1.classList.remove("animate__animated","animate__swing");
+    }
+  }
+  function myImg2() {
+    var img2 = document.getElementById("img2");
+    var header = document.querySelector(".target-img2");
+    var sticky = header.offsetTop;
+    if (window.pageYOffset > sticky) {
+      img2.classList.add("animate__animated","animate__swing");
+    } else {
+      img2.classList.remove("animate__animated","animate__swing");
+    }
+  }
+  function myImg3() {
+    var img3 = document.getElementById("img3");
+    var header = document.querySelector(".target-img3");
+    var sticky = header.offsetTop;
+    if (window.pageYOffset > sticky) {
+      img3.classList.add("animate__animated","animate__swing");
+    } else {
+      img3.classList.remove("animate__animated","animate__swing");
     }
   }
   function myValue() {
