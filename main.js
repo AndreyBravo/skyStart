@@ -1,15 +1,3 @@
-
-var postion = $('#target').offset().top,
-    height = $('#target').height();
-$(document).on('scroll', function (){
-  var scroll = $(document).scrollTop();
-  if(scroll  > postion && scroll < (postion + height) ) {
-     $('#value').addClass('value-number')
-     }
-    //  else {
-    //     $('.value-number1').removeClass('value-number')
-    //  }
-})
 const counters = document.querySelectorAll(".value-number");
 let timeId=setInterval(() => counters, 100);
 
@@ -32,3 +20,15 @@ counters.forEach((counter) => {
 
   animate();
 });
+window.onscroll = function() {myFunction()};
+var myHeader=document.getElementById("myHeader");
+var header = document.getElementById("scroll");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    myHeader.classList.add("sticky");
+  } else {
+    myHeader.classList.remove("sticky");
+  }
+}

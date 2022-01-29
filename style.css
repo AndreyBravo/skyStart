@@ -77,6 +77,8 @@
 
 .containerfull .context-first .context .img {
   width: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .containerfull .context-first .context .img img {
@@ -118,6 +120,11 @@
   color: #0066ff;
 }
 
+.containerfull .info .context .img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .containerfull .info .context .img img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -139,6 +146,10 @@
 }
 
 .containerfull .navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +210,11 @@
   border-radius: 8px;
   color: #0075ff;
   cursor: pointer;
+}
+
+.containerfull .sticky {
+  position: fixed;
+  top: 0;
 }
 
 .containerfull .footer {
@@ -263,10 +279,6 @@
   display: -ms-flexbox;
   display: flex;
   padding: 130px 0;
-}
-
-.containerfull .container .info .context .text {
-  width: 617px;
 }
 
 .containerfull .container .info .context .text h1 {
@@ -633,9 +645,6 @@
   .containerfull .container {
     margin: auto 208px;
   }
-  .containerfull .container .info .context .text {
-    width: 40%;
-  }
   .containerfull .container .info .context .img {
     width: 50%;
     height: 100%;
@@ -720,16 +729,13 @@
   .containerfull .container .valuecontainer .rowImg {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
     width: 100%;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
     width: 42.99%;
-    margin: 20px 0 0 0;
+    margin: 20px 20px 0 0;
   }
   .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
     width: 42.99%;

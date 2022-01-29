@@ -60,6 +60,7 @@
       }
       .img {
         width: 50%;
+        flex-shrink: 0;
         img {
           
           
@@ -98,7 +99,7 @@
         }
       }
       .img {
-        
+        flex-shrink: 0;
         img {
           
           
@@ -122,6 +123,12 @@
     margin-top: 72px;
   }
   .navbar {
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,6 +174,11 @@
       }
     }
   }
+  .sticky {
+    position: fixed;
+    top: 0;
+    
+  }
   .footer {
     margin: 72px 32px;
     display: flex;
@@ -208,7 +220,7 @@
           padding: 130px 0;
         }
         .text {
-          width: 617px;
+          
           h1 {
             font-family: "Inter";
             font-style: normal;
@@ -526,9 +538,7 @@
       margin: auto 208px;
       .info {
         .context {
-          .text {
-            width: 40%;
-          }
+          
           .img {
             width: 50%;
             height: 100%;
@@ -640,7 +650,7 @@
       .valuecontainer {
         .rowImg {
           flex-wrap: wrap;
-          justify-content: space-between;
+          
           
           .rowcontent {
 
@@ -648,10 +658,12 @@
               width: 100%;
             }
             &:nth-child(2) {
+              
               width: 42.99%;
-              margin: 20px 0 0 0;
+              margin: 20px 20px 0 0;
             }
             &:nth-child(3) {
+              
               width: 42.99%;
               margin-top: 20px;
             }
