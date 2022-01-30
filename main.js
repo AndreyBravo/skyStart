@@ -22,7 +22,7 @@ window.addEventListener("scroll", function () {
 
 const header = () => {
   window.onscroll = function () {
-    myFunction(), myValue(), myImg1(), myImg2(), myImg3()
+    myFunction(),myValue();
   };
 
   function myFunction() {
@@ -35,52 +35,66 @@ const header = () => {
       myHeader.classList.remove("sticky");
     }
   }
-  function myImg1() {
-    var img1 = document.getElementById("img1");
-    var header = document.querySelectorAll(".target-img1");
-    var sticky = header.offsetTop;
-    if (window.pageYOffset > sticky) {
-      img1.classList.add("animate__animated","animate__swing");
-    } else {
-      img1.classList.remove("animate__animated","animate__swing");
-    }
-  }
-  function myImg2() {
-    var img2 = document.getElementById("img2");
-    var header = document.querySelector(".target-img2");
-    var sticky = header.offsetTop;
-    if (window.pageYOffset > sticky) {
-      img2.classList.add("animate__animated","animate__swing");
-    } else {
-      img2.classList.remove("animate__animated","animate__swing");
-    }
-  }
-  function myImg3() {
-    var img3 = document.getElementById("img3");
-    var header = document.querySelector(".target-img3");
-    var sticky = header.offsetTop;
-    if (window.pageYOffset > sticky) {
-      img3.classList.add("animate__animated","animate__swing");
-    } else {
-      img3.classList.remove("animate__animated","animate__swing");
-    }
-  }
   function myValue() {
-    var value1 = document.getElementById("value1");
-    var value2 = document.getElementById("value2");
-    var value3 = document.getElementById("value3");
-    var header = document.getElementById("target");
+    var myValue1 = document.getElementById("value1");
+    var myValue2 = document.getElementById("value2");
+    var myValue3 = document.getElementById("value3");
+    var header = document.getElementById("scroll");
     var sticky = header.offsetTop;
     if (window.pageYOffset > sticky) {
-      value1.classList.add("value-number");
-      value2.classList.add("value-number");
-      value3.classList.add("value-number");
-    } else {
-      value1.classList.remove("value-number");
-      value2.classList.remove("value-number");
-      value3.classList.remove("value-number");
-    }
+      myValue1.classList.add("value-number");
+      myValue2.classList.add("value-number");
+      myValue3.classList.add("value-number");
+    } 
   }
 };
 
+const animItems = document.querySelectorAll(".anim-items");
+
+
+if (animItems.length > 0) {
+  window.addEventListener("scroll", animOnScroll);
+  function animOnScroll() {
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItem0Height = animItems[0].offsetHeight;
+      const animItem0Offset = offset(animItems[0]).top;
+      const animItem1Height = animItems[1].offsetHeight;
+      const animItem1Offset = offset(animItems[1]).top;
+
+      const animStart = 0.9;
+
+      let animItem0Point = window.innerHeight - animItem0Height / animStart;
+      if(animItem0Height > window.innerHeight){
+        animItem0Point = window.innerHeight - window.innerHeight / animStart;
+      }
+      if (
+        pageYOffset > animItem0Offset - animItem0Point &&
+        pageYOffset < animItem0Offset + animItem0Height
+      ) {
+        animItems[0].classList.add("animate__animated", "animate__backInLeft");
+      }
+      let animItem1Point = window.innerHeight - animItem1Height / animStart;
+      if(animItem1Height > window.innerHeight){
+        animItem0Point = window.innerHeight - window.innerHeight / animStart;
+      }
+      if (
+        pageYOffset > animItem1Offset - animItem1Point &&
+        pageYOffset < animItem1Offset + animItem1Height
+      ) {
+        animItems[1].classList.add("animate__animated", "animate__backInRight");
+      }
+    }
+  }
+
+}
+
+
+
+function offset(el) {
+  const rect = el.getBoundingClientRect(),
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+}
 header();
