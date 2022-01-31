@@ -430,6 +430,7 @@
 }
 
 .containerfull .container .map .img-map {
+  display: none;
   width: 848px;
   height: 416px;
   overflow: visible;
@@ -859,6 +860,9 @@
   .containerfull .container .contextAleph .contextValue {
     padding: 0 32px;
   }
+  .containerfull .container .map img {
+    width: 80%;
+  }
   .containerfull .container .contacts .rowcontacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -992,6 +996,12 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding: 0;
+  }
+  .containerfull .container .info .context:nth-child(2) .text {
+    padding: 0;
+  }
+  .containerfull .container .info .context:nth-child(3) .text {
     padding: 0;
   }
   .containerfull .container .info .context .text {
