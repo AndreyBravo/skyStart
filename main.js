@@ -54,7 +54,7 @@ const header = () => {
     }
   }
 };
-header();
+
 //map
 
 function randomNumber(min, max) {
@@ -64,30 +64,30 @@ function randomNumber(min, max) {
 var animationTime = 1.5;
 var dots = document.getElementsByTagName("circle");
 var numdots = dots.length;
-var loopDelay = (numdots * animationTime) * 1000;
+var loopDelay = numdots * animationTime * 1000;
 
-var dotPulse = function(){
-  var dot = dots.item(randomNumber(0,numdots));
+var dotPulse = function () {
+  var dot = dots.item(randomNumber(0, numdots));
   var pulse = dot.cloneNode(true);
   pulse.style.setProperty("fill", "#0066ff", null);
   document.getElementById("map-dots").appendChild(pulse);
 
   TweenMax.to(pulse, 1, {
     scale: 6,
-    transformOrigin: 'center center',
-    onComplete: function(){
+    transformOrigin: "center center",
+    onComplete: function () {
       dotPulse();
       TweenMax.to(pulse, 0.5, {
         scale: 8,
-        transformOrigin: 'center center',
+        transformOrigin: "center center",
         opacity: 0,
-        onComplete: function(){
+        onComplete: function () {
           pulse.remove();
-        }
+        },
       });
-    }
+    },
   });
-  
+
   /*var pinTimeline = new TimelineMax({
     repeat: 1,
     delay: animationTime,
@@ -102,6 +102,41 @@ var dotPulse = function(){
     opacity: 0,
      onComplete: dotPulse
   });*/
-}
+};
 
 dotPulse();
+
+//modal
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function removeNavbar() {
+  var myHeader = document.getElementById("myHeader");
+  myHeader.classList.remove("sticky");
+  window.addEventListener("scroll", () => {
+    myHeader.classList.remove("sticky");
+  });
+}
+
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+  removeNavbar();
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+    removeNavbar();
+  }
+}
+
+trigger.addEventListener("click", toggleModal);
+
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+header();
+//input file
+function uploadFile(target) {
+  document.getElementById("file-name").innerHTML = target.files[0].name;
+}

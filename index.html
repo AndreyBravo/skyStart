@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Lending</title>
   </head>
   <body>
@@ -30,8 +30,8 @@
           <img src="./image/linkedin.svg" alt="linkedIn" />
         </div>
       </div>
-      <div class="context-first" >
-        <div class="context" >
+      <div class="context-first">
+        <div class="context">
           <div class="text" data-aos="zoom-in">
             <h1>Кто мы?</h1>
             <p>
@@ -40,12 +40,14 @@
               глобальную платформу для электронной коммерции.
             </p>
           </div>
-          <div class="img" data-aos="fade-right"><img src="./image/whoWe.png" alt="whowe" /></div>
+          <div class="img" data-aos="fade-right">
+            <img src="./image/whoWe.png" alt="whowe" />
+          </div>
         </div>
       </div>
-      <div class="container">        
+      <div class="container">
         <div class="info">
-          <div class="context" >
+          <div class="context">
             <div class="text" data-aos="zoom-in">
               <h1>Кто мы?</h1>
               <p>
@@ -54,10 +56,14 @@
                 глобальную платформу для электронной коммерции.
               </p>
             </div>
-            <div class="img" data-aos="fade-right"><img src="./image/whoWe.png" alt="whowe" /></div>
+            <div class="img" data-aos="fade-right">
+              <img src="./image/whoWe.png" alt="whowe" />
+            </div>
           </div>
-          <div id="scroll" class="context" >
-            <div class="img" data-aos="fade-left"><img src="./image/where.png" alt="where" /></div>
+          <div id="scroll" class="context">
+            <div class="img" data-aos="fade-left">
+              <img src="./image/where.png" alt="where" />
+            </div>
             <div class="text" data-aos="zoom-in">
               <h1>Откуда?</h1>
               <p>
@@ -67,7 +73,7 @@
               </p>
             </div>
           </div>
-          <div class="context" >
+          <div class="context">
             <div class="text" data-aos="zoom-in">
               <p>
                 В 2021 мы стали частью <a href="#">Aleph Holding</a> —
@@ -75,17 +81,19 @@
                 72 странах, стратегического партнера Twitter, Facebook и TikTok.
               </p>
             </div>
-            <div id="img3" class="img" data-aos="fade-right"><img src="./image/aleph.png" alt="whowe" /></div>
+            <div id="img3" class="img" data-aos="fade-right">
+              <img src="./image/aleph.png" alt="whowe" />
+            </div>
           </div>
         </div>
         <div id="value_target" class="contextAleph">
-          <h1 >Aleph Holding в цифрах</h1>
-          <p >
+          <h1>Aleph Holding в цифрах</h1>
+          <p>
             Aleph является материнской компанией для <a href="">Httpool</a>,
             <a href="">IMS</a>, <a href="">Ad Dynamo</a>,
             <a href="">Social Snack</a> и <a href="">Wise.Blue</a>.
           </p>
-          <div  class="contextValue">
+          <div class="contextValue">
             <div class="content">
               <h1 id="value1" akhi="20">0</h1>
               <h4>Медиа Платформ</h4>
@@ -95,7 +103,7 @@
               <h4>Сотрудников</h4>
             </div>
             <div class="content">
-              <h1 id="value3"  akhi="4000">0</h1>
+              <h1 id="value3" akhi="4000">0</h1>
               <h4>Местных Партнеров</h4>
             </div>
           </div>
@@ -3639,7 +3647,7 @@
               <circle cx="214.6" cy="2" r="2" />
               <circle cx="208.7" cy="2" r="2" />
             </g>
-          </svg>         
+          </svg>
         </div>
       </div>
       <div class="value">
@@ -3689,7 +3697,7 @@
                     делает.
                   </p>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -3765,7 +3773,7 @@
                 ценности? Обязательно напишите нам. Для классных людей у нас
                 всегда найдется место на борту!
               </p>
-              <a href="#">Написать нам</a>
+              <button class="trigger">Написать нам</button>
             </div>
             <div class="writeImg">
               <img src="./image/write.png" alt="writeOur" />
@@ -3781,13 +3789,41 @@
         </div>
       </div>
     </div>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1>Оставить заявку</h1>
+        <form>
+          
+          <label for="GET-name">Name</label>
+          <input id="GET-name" type="text" name="name" />
+          <label for="GET-name">E-mail</label>
+          <input id="GET-name" type="text" name="name" />
+          <label for="GET-name">Комментарии</label>
+          <h2>Расскажите в свободной форме о себе</h2>
+          <textarea name="Comments" id="GET-name"></textarea>
+          <div class="inputfile-box">
+            <input type="file" id="file" class="inputfile" onchange='uploadFile(this)'>
+            <label for="file">
+              <span id="file-name" class="file-box">Файл не найден</span>
+              <span class="file-button">
+                <i class="fa fa-upload" aria-hidden="true"></i>
+                Выбрать файл
+              </span>
+            </label>
+          </div>
+          <input class="sumbit" type="submit" value="Отпарвить заявку" >
+          <h2>Нажимая кнопку «Отпарвить заявку», я принимаю условия <a href="#">пользовательского соглашения</a> </h2>        
+        </form>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./TweenMax.min.js"></script>
     <script src="./main.js"></script>
     <script>
       AOS.init({
-        offset:300,
-        once: true
+        offset: 300,
+        once: true,
       });
     </script>
   </body>
