@@ -429,133 +429,8 @@
   color: #667085;
 }
 
-.containerfull .container .map .img-map {
-  display: none;
-  width: 848px;
-  height: 416px;
-  overflow: visible;
-  background-image: url(./image/map.png);
-}
-
-.containerfull .container .map .img-map .dot {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.containerfull .container .map .img-map .dot img {
-  width: 100%;
-  height: 100%;
-}
-
-.containerfull .container .map .img-map .dot .dot_1 {
-  position: absolute;
-  top: 182px;
-  left: 676px;
-  -webkit-animation: animate_grow;
-          animation: animate_grow;
-}
-
-.containerfull .container .map .img-map .dot .dot_2 {
-  position: absolute;
-  top: 182px;
-  left: 572px;
-  -webkit-animation: animate_grow;
-          animation: animate_grow;
-}
-
-.containerfull .container .map .img-map .dot .dot_3 {
-  position: absolute;
-  top: 216px;
-  left: 178px;
-  -webkit-animation: animate_grow;
-          animation: animate_grow;
-}
-
-.containerfull .container .map .img-map .dot .dot_4 {
-  position: absolute;
-  top: 256px;
-  left: 477px;
-  -webkit-animation: animate_grow;
-          animation: animate_grow;
-}
-
-.containerfull .container .map .img-map .dot .dot_5 {
-  position: absolute;
-  top: 312px;
-  left: 418px;
-  -webkit-animation: animate_grow 2s infinite;
-          animation: animate_grow 2s infinite;
-}
-
-.containerfull .container .map .img-map .dot .dot_6 {
-  position: absolute;
-  top: 331px;
-  left: 411px;
-  -webkit-animation: animate_grow 2s infinite;
-          animation: animate_grow 2s infinite;
-}
-
-.containerfull .container .map .img-map .dot .dot_7 {
-  position: absolute;
-  top: 206px;
-  left: 136px;
-  -webkit-animation: animate_grow 2s infinite;
-          animation: animate_grow 2s infinite;
-}
-
-.containerfull .container .map .img-map .dot .dot_8 {
-  position: absolute;
-  top: 108px;
-  left: 372px;
-}
-
-.containerfull .container .map .img-map .dot .dot_9 {
-  position: absolute;
-  top: 137px;
-  left: 362px;
-}
-
-.containerfull .container .map .img-map .dot .dot_10 {
-  position: absolute;
-  top: 176px;
-  left: 576px;
-}
-
-.containerfull .container .map .img-map .dot .dot_11 {
-  position: absolute;
-  top: 182px;
-  left: 602px;
-}
-
-.containerfull .container .map .img-map .dot .dot_12 {
-  position: absolute;
-  top: 212px;
-  left: 706px;
-}
-
-.containerfull .container .map .img-map .dot .dot_13 {
-  position: absolute;
-  top: 212px;
-  left: 591px;
-}
-
-.containerfull .container .map .img-map .dot .dot_14 {
-  position: absolute;
-  top: 209px;
-  left: 664px;
-}
-
-.containerfull .container .map .img-map .dot .dot_15 {
-  position: absolute;
-  top: 102px;
-  left: 676px;
-}
-
-.containerfull .container .map .img-map .dot .dot_16 {
-  position: absolute;
-  top: 97px;
-  left: 652px;
+.containerfull .container .map .map-dots circle {
+  fill: #667085;
 }
 
 .containerfull .container .valuecontainer h1 {
@@ -832,7 +707,7 @@
     margin: auto 48px;
   }
   .containerfull .container .map .img-map {
-    width: 100%;
+    background-size: 100%;
   }
 }
 

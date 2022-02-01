@@ -40,13 +40,13 @@ const header = () => {
     var myValue2 = document.getElementById("value2");
     var myValue3 = document.getElementById("value3");
     var header = document.getElementById("value_target");
-     
-    if(header.clientWidth> 768){
-      var sticky = header.offsetTop - header.offsetHeight ;
-    }else{
-      var sticky = header.offsetTop - header.offsetHeight/5;
+
+    if (header.clientWidth > 768) {
+      var sticky = header.offsetTop - header.offsetHeight;
+    } else {
+      var sticky = header.offsetTop - header.offsetHeight / 5;
     }
-    
+
     if (window.pageYOffset > sticky) {
       myValue1.classList.add("value-number");
       myValue2.classList.add("value-number");
@@ -55,5 +55,53 @@ const header = () => {
   }
 };
 header();
-//value
+//map
 
+function randomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+var animationTime = 1.5;
+var dots = document.getElementsByTagName("circle");
+var numdots = dots.length;
+var loopDelay = (numdots * animationTime) * 1000;
+
+var dotPulse = function(){
+  var dot = dots.item(randomNumber(0,numdots));
+  var pulse = dot.cloneNode(true);
+  pulse.style.setProperty("fill", "#0066ff", null);
+  document.getElementById("map-dots").appendChild(pulse);
+
+  TweenMax.to(pulse, 1, {
+    scale: 6,
+    transformOrigin: 'center center',
+    onComplete: function(){
+      dotPulse();
+      TweenMax.to(pulse, 0.5, {
+        scale: 8,
+        transformOrigin: 'center center',
+        opacity: 0,
+        onComplete: function(){
+          pulse.remove();
+        }
+      });
+    }
+  });
+  
+  /*var pinTimeline = new TimelineMax({
+    repeat: 1,
+    delay: animationTime,
+    repeatDelay: 0,
+    yoyo: false
+  });
+
+  pinTimeline.to(pulse, animationTime / 2, {
+    scale: 10,
+    fill: '#F9423A',
+    transformOrigin: 'center center',
+    opacity: 0,
+     onComplete: dotPulse
+  });*/
+}
+
+dotPulse();
