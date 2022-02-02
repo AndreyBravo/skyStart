@@ -125,9 +125,15 @@ function removeNavbar() {
  
 }
 
+function closeModal(){
+  modal.classList.toggle("show-modal");
+  header();
+}
+
 function toggleModal() {
   modal.classList.toggle("show-modal");
   removeNavbar();
+  
   
 }
 
@@ -139,8 +145,8 @@ function windowOnClick(event) {
 }
 
 trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-closeButton1.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", closeModal);
+closeButton1.addEventListener("click", closeModal);
 window.addEventListener("click", windowOnClick);
 
 //input file
