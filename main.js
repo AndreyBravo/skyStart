@@ -112,6 +112,7 @@ dotPulse();
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
+const closeButton1 = document.querySelector(".close-button1");
 const stop = false;
 
 function removeNavbar() {
@@ -139,6 +140,7 @@ function windowOnClick(event) {
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
+closeButton1.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
 //input file
