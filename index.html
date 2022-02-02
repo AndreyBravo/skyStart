@@ -40,7 +40,7 @@
               глобальную платформу для электронной коммерции.
             </p>
           </div>
-          <div class="img" data-aos="fade-right">
+          <div class="img">
             <img src="./image/whoWe.png" alt="whowe" />
           </div>
         </div>
@@ -56,15 +56,15 @@
                 глобальную платформу для электронной коммерции.
               </p>
             </div>
-            <div class="img" data-aos="fade-right">
+            <div class="img">
               <img src="./image/whoWe.png" alt="whowe" />
             </div>
           </div>
           <div id="scroll" class="context">
-            <div class="img" data-aos="fade-left">
+            <div class="img" data-aos="fade-right" data-aos-offset="200">
               <img src="./image/where.png" alt="where" />
             </div>
-            <div class="text" data-aos="zoom-in">
+            <div class="text" data-aos="zoom-in" data-aos-offset="200">
               <h1>Откуда?</h1>
               <p>
                 Наша история началась в 2017 году в Минске, когда небольшая
@@ -74,14 +74,14 @@
             </div>
           </div>
           <div class="context">
-            <div class="text" data-aos="zoom-in">
+            <div class="text" data-aos="zoom-in" data-aos-offset="20">
               <p>
                 В 2021 мы стали частью <a href="#">Aleph Holding</a> —
                 глобального конгломерата на рынке цифровой рекламы с офисами в
                 72 странах, стратегического партнера Twitter, Facebook и TikTok.
               </p>
             </div>
-            <div id="img3" class="img" data-aos="fade-right">
+            <div id="img3" class="img" data-aos="flip-right" data-aos-offset="100">
               <img src="./image/aleph.png" alt="whowe" />
             </div>
           </div>
@@ -3656,7 +3656,7 @@
             <h1>Ценности</h1>
             <p>на которых строится работа в нашей команде</p>
             <div class="rowImg">
-              <div class="rowcontent" data-aos="fade-right">
+              <div class="rowcontent" data-aos="zoom-in">
                 <img src="./image/rowimg1.svg" alt="rowimg1" />
                 <h1>Свобода</h1>
                 <p>
@@ -3664,7 +3664,7 @@
                   указывать, что и как делать.
                 </p>
               </div>
-              <div class="rowcontent" data-aos="zoom-in">
+              <div class="rowcontent" data-aos="zoom-in" data-aos-delay="300">
                 <img src="./image/rowimg2.svg" alt="rowimg2" />
                 <h1>Смелость</h1>
                 <p>
@@ -3672,7 +3672,7 @@
                   ошибки и учиться на них.
                 </p>
               </div>
-              <div class="rowcontent" data-aos="fade-left">
+              <div class="rowcontent" data-aos="zoom-in" data-aos-delay="400">
                 <img src="./image/rowimg3.svg" alt="rowimg3" />
                 <h1>Ответственность</h1>
                 <p>
@@ -3795,25 +3795,27 @@
         <h1>Оставить заявку</h1>
         <form>
           
-          <label for="GET-name">Name</label>
+          <label for="GET-name">Имя</label>
           <input id="GET-name" type="text" name="name" />
           <label for="GET-name">E-mail</label>
           <input id="GET-name" type="text" name="name" />
           <label for="GET-name">Комментарии</label>
-          <h2>Расскажите в свободной форме о себе</h2>
+          <p>Расскажите в свободной форме о себе</p>
           <textarea name="Comments" id="GET-name"></textarea>
+          <label for="get-file">Резюме</label>
           <div class="inputfile-box">
             <input type="file" id="file" class="inputfile" onchange='uploadFile(this)'>
+            <span id="file-name" class="file-box">Файл не выбран</span>
             <label for="file">
-              <span id="file-name" class="file-box">Файл не найден</span>
+              
               <span class="file-button">
-                <i class="fa fa-upload" aria-hidden="true"></i>
+                
                 Выбрать файл
               </span>
             </label>
           </div>
-          <input class="sumbit" type="submit" value="Отпарвить заявку" >
-          <h2>Нажимая кнопку «Отпарвить заявку», я принимаю условия <a href="#">пользовательского соглашения</a> </h2>        
+          <input class="sumbit" type="submit" value="Отправить заявку" >
+          <p>Нажимая кнопку «Отпарвить заявку», я принимаю условия <a href="#">пользовательского соглашения</a> </p>        
         </form>
       </div>
     </div>
@@ -3822,7 +3824,7 @@
     <script src="./main.js"></script>
     <script>
       AOS.init({
-        offset: 300,
+        
         once: true,
       });
     </script>

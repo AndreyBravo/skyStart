@@ -35,13 +35,17 @@
   padding: 0;
 }
 
+* button {
+  border: none;
+}
+
 .modal {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(1.1);
@@ -80,7 +84,7 @@
   padding: 0 32px 48px 32px;
 }
 
-.modal .modal-content form h2 {
+.modal .modal-content form p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -90,11 +94,11 @@
   color: #98a2b3;
 }
 
-.modal .modal-content form h2:last-child {
+.modal .modal-content form p:last-child {
   text-align: center;
 }
 
-.modal .modal-content form h2 a {
+.modal .modal-content form p a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -105,9 +109,44 @@
 }
 
 .modal .modal-content form .inputfile-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   width: 330px;
   padding: 8px 16px;
+}
+
+.modal .modal-content form .inputfile-box .file-box {
+  display: inline-block;
+  width: 123px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 51px 8px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #d6dbe4;
+  color: #98a2b3;
+}
+
+.modal .modal-content form .inputfile-box label .file-button {
+  width: 108px;
+  background: #ffffff;
+  padding: 8px 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   border: 1px solid #d6dbe4;
 }
 
@@ -115,35 +154,8 @@
   display: none;
 }
 
-.modal .modal-content form .inputfile-box label .file-box {
-  margin-right: 67px;
-  display: inline-block;
-  width: 123px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: calc(2rem - 2px);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #98A2B3;
-}
-
-.modal .modal-content form .inputfile-box label .file-button {
-  width: 108px;
-  background: #ffffff;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .modal .modal-content form .sumbit {
+  height: auto;
   margin-top: 28px;
   margin-bottom: 20px;
   padding: 16px 0;
@@ -165,39 +177,37 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  color: #344054;
 }
 
 .modal .modal-content form input {
   width: 100%;
+  height: 40px;
   margin-bottom: 20px;
   border: 1px solid #d6dbe4;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 6px;
   background: #ffffff;
 }
 
 .modal .modal-content form textarea {
   width: 100%;
+  margin-top: 6px;
+  margin-bottom: 20px;
   padding-top: 6px;
-  padding-bottom: 20px;
+  border: 1px solid #d6dbe4;
   height: 120px;
+  border-radius: 6px;
+  resize: none;
 }
 
 .modal .modal-content .close-button {
   margin-top: 20px;
   margin-right: 20px;
   float: right;
-  width: 8px;
-  height: 8px;
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
   background: #ffffff;
-}
-
-.modal .modal-content .close-button:hover {
-  background-color: darkgray;
 }
 
 .show-modal {
@@ -1353,15 +1363,17 @@
   }
   .modal .modal-content {
     width: 100%;
-    top: 80%;
-    left: 50%;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    border-radius: 8px 8px 0px 0px;
   }
   .modal .modal-content form {
     padding: 20px 16px 34px 16px;
   }
   .modal .modal-content .close-button {
-    width: 12px;
-    height: 12px;
     margin-top: 38px;
     margin-right: 30px;
   }
