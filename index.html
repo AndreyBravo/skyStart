@@ -81,7 +81,12 @@
                 72 странах, стратегического партнера Twitter, Facebook и TikTok.
               </p>
             </div>
-            <div id="img3" class="img" data-aos="flip-right" data-aos-offset="100">
+            <div
+              id="img3"
+              class="img"
+              data-aos="flip-right"
+              data-aos-offset="100"
+            >
               <img src="./image/aleph.png" alt="whowe" />
             </div>
           </div>
@@ -3794,33 +3799,43 @@
         <span class="close-button">&times;</span>
         <h1>Оставить заявку</h1>
         <form>
-          <div class="input-label"><label for="GET-name">Имя</label>
-          <input id="GET-name" type="text" name="name" /></div>
+          <div class="input-label">
+            <label for="GET-name">Имя</label>
+            <input id="GET-name" type="text" name="name" />
+          </div>
 
-          <div class="input-label"><label for="GET-name">E-mail</label>
-          <input id="GET-name" type="text" name="name" /></div>
+          <div class="input-label">
+            <label for="GET-name">E-mail</label>
+            <input id="GET-name" type="text" name="name" />
+          </div>
 
-          <div class="input-label"><label for="GET-name">Комментарии</label>
-          <p>Расскажите в свободной форме о себе</p>
-          <textarea name="Comments" id="GET-name"></textarea></div>
+          <div class="input-label">
+            <label for="GET-name">Комментарии</label>
+            <p>Расскажите в свободной форме о себе</p>
+            <textarea name="Comments" id="GET-name"></textarea>
+          </div>
 
-          
-          
-          
           <label for="get-file">Резюме</label>
           <div class="inputfile-box">
-            <input type="file" id="file" class="inputfile" onchange='uploadFile(this)'>
-            <span id="file-name" class="file-box">Файл не выбран</span>
+            <input
+              type="file"
+              id="file"
+              class="inputfile"
+              onchange="uploadFile(this)"
+            />
+            <div class="file">
+              <span id="file-name" class="file-box">Файл не выбран</span>
             <label for="file">
-              
-              <span class="file-button">
-                
-                Выбрать файл
-              </span>
+              <span class="file-button"> Выбрать файл </span>
             </label>
+            </div>
+            
           </div>
-          <input class="sumbit" type="submit" value="Отправить заявку" >
-          <p>Нажимая кнопку «Отпарвить заявку», я принимаю условия <a href="#">пользовательского соглашения</a> </p>        
+          <input class="sumbit" type="submit" value="Отправить заявку" />
+          <p>
+            Нажимая кнопку «Отпарвить заявку», я принимаю условия
+            <a href="#">пользовательского соглашения</a>
+          </p>
         </form>
       </div>
     </div>
@@ -3829,7 +3844,6 @@
     <script src="./main.js"></script>
     <script>
       AOS.init({
-        
         once: true,
       });
     </script>

@@ -111,37 +111,37 @@
 
 .modal .modal-content form .inputfile-box {
   position: relative;
-  padding: 8px 16px;
 }
 
-.modal .modal-content form .inputfile-box .file-box {
-  display: inline-block;
-  width: auto;
+.modal .modal-content form .inputfile-box .file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 332px;
+  border: 1px solid #D6DBE4;
+  border-radius: 6px;
+}
+
+.modal .modal-content form .inputfile-box .file-box {
   padding: 8px 51px 8px 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  border: 1px solid #d6dbe4;
-  color: #98a2b3;
+  color: #98A2B3;
+}
+
+.modal .modal-content form .inputfile-box label {
+  width: auto;
 }
 
 .modal .modal-content form .inputfile-box label .file-button {
-  width: 108px;
-  background: #ffffff;
   padding: 8px 16px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  border: 1px solid #d6dbe4;
+  border-left: 1px solid #D6DBE4;
   cursor: pointer;
 }
 
