@@ -132,6 +132,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  border-right: 1px solid #D6DBE4;
   color: #98A2B3;
 }
 
@@ -141,7 +142,6 @@
 
 .modal .modal-content form .inputfile-box label .file-button {
   padding: 8px 16px;
-  border-left: 1px solid #D6DBE4;
   cursor: pointer;
 }
 
