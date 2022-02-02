@@ -3794,14 +3794,19 @@
         <span class="close-button">&times;</span>
         <h1>Оставить заявку</h1>
         <form>
-          
-          <label for="GET-name">Имя</label>
-          <input id="GET-name" type="text" name="name" />
-          <label for="GET-name">E-mail</label>
-          <input id="GET-name" type="text" name="name" />
-          <label for="GET-name">Комментарии</label>
+          <div class="input-label"><label for="GET-name">Имя</label>
+          <input id="GET-name" type="text" name="name" /></div>
+
+          <div class="input-label"><label for="GET-name">E-mail</label>
+          <input id="GET-name" type="text" name="name" /></div>
+
+          <div class="input-label"><label for="GET-name">Комментарии</label>
           <p>Расскажите в свободной форме о себе</p>
-          <textarea name="Comments" id="GET-name"></textarea>
+          <textarea name="Comments" id="GET-name"></textarea></div>
+
+          
+          
+          
           <label for="get-file">Резюме</label>
           <div class="inputfile-box">
             <input type="file" id="file" class="inputfile" onchange='uploadFile(this)'>
