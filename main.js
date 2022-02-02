@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
     animate();
   });
 });
-
+//header&&value
 const header = () => {
   window.onscroll = function () {
     myFunction(), myValue();
@@ -35,6 +35,7 @@ const header = () => {
       myHeader.classList.remove("sticky");
     }
   }
+
   function myValue() {
     var myValue1 = document.getElementById("value1");
     var myValue2 = document.getElementById("value2");
@@ -54,6 +55,7 @@ const header = () => {
     }
   }
 };
+header();
 
 //map
 
@@ -110,32 +112,35 @@ dotPulse();
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
+const stop = false;
 
 function removeNavbar() {
   var myHeader = document.getElementById("myHeader");
   myHeader.classList.remove("sticky");
-  window.addEventListener("scroll", () => {
+  window.onscroll = function () {
+    var myHeader = document.getElementById("myHeader");
     myHeader.classList.remove("sticky");
-  });
+  };
+ 
 }
 
 function toggleModal() {
   modal.classList.toggle("show-modal");
   removeNavbar();
+  
 }
 
 function windowOnClick(event) {
   if (event.target === modal) {
     toggleModal();
-    removeNavbar();
+    header();
   }
 }
 
 trigger.addEventListener("click", toggleModal);
-
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
-header();
+
 //input file
 function uploadFile(target) {
   document.getElementById("file-name").innerHTML = target.files[0].name;
