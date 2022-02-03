@@ -57,6 +57,29 @@
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
 }
 
+.modal .form__body {
+  position: relative;
+}
+
+.modal .form__body ._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .form__body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.9) url(./image/load.gif) center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
 .modal .modal-content {
   position: absolute;
   top: 50%;
@@ -64,7 +87,9 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: white;
-  width: 516px;
+  overflow: scroll;
+  max-height: 90%;
+  width: 580px;
   -webkit-box-shadow: 0px 12px 17px rgba(71, 78, 98, 0.12), 0px 5px 22px rgba(71, 78, 98, 0.12), 0px 7px 8px rgba(71, 78, 98, 0.12);
           box-shadow: 0px 12px 17px rgba(71, 78, 98, 0.12), 0px 5px 22px rgba(71, 78, 98, 0.12), 0px 7px 8px rgba(71, 78, 98, 0.12);
   border-radius: 12px;
@@ -87,6 +112,11 @@
 
 .modal .modal-content form {
   padding: 0 32px 48px 32px;
+}
+
+.modal .modal-content form .input-label ._error {
+  -webkit-box-shadow: 0 0 15px red;
+          box-shadow: 0 0 15px red;
 }
 
 .modal .modal-content form p {
@@ -125,7 +155,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 332px;
-  border: 1px solid #D6DBE4;
+  border: 1px solid #d6dbe4;
   border-radius: 6px;
 }
 
@@ -139,8 +169,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  border-right: 1px solid #D6DBE4;
-  color: #98A2B3;
+  border-right: 1px solid #d6dbe4;
+  color: #98a2b3;
 }
 
 .modal .modal-content form .inputfile-box label {
@@ -894,9 +924,6 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .modal .modal-content {
-    width: 580px;
-  }
 }
 
 @media screen and (max-width: 1601px) {
@@ -1372,8 +1399,6 @@
   }
   .modal .modal-content {
     width: 100%;
-    overflow: scroll;
-    max-height: 90%;
     bottom: 0;
     top: auto;
     left: 0;

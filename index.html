@@ -3795,7 +3795,7 @@
       </div>
     </div>
     <div class="modal">
-      <div class="modal-content">
+      <div class="modal-content form__body">
         <span class="close-button">&times;</span>
         <h1>Оставить заявку</h1>
           
@@ -3805,24 +3805,24 @@
           <span class="close-button1">&times;</span>
         </div>
 
-        <form>
+        <form action="send.php" method="post" id="form">
           <div class="input-label">
             <label for="GET-name">Имя</label>
-            <input id="GET-name" type="text" name="name" />
+            <input id="GET-Name" class="form__input _req" type="text" name="name" />
           </div>
 
           <div class="input-label">
-            <label for="GET-name">E-mail</label>
-            <input id="GET-name" type="text" name="name" />
+            <label for="GET-Email">E-mail</label>
+            <input id="GET-Email" class="form__input _email _req " type="text" name="email" />
           </div>
 
           <div class="input-label">
-            <label for="GET-name">Комментарии</label>
+            <label for="GET-Comments">Комментарии</label>
             <p>Расскажите в свободной форме о себе</p>
-            <textarea name="Comments" id="GET-name"></textarea>
+            <textarea class="form__input _req" name="comments" id="GET-Comments"></textarea>
           </div>
 
-          <label for="get-file">Резюме</label>
+          <label for="file">Резюме</label>
           <div class="inputfile-box">
             <input
               type="file"
