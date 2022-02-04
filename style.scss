@@ -103,7 +103,7 @@
 
       .input-label {
         ._error {
-          box-shadow: 0 0 15px red;
+          border-color: #F04438;
         }
       }
       p {
@@ -361,7 +361,7 @@
         font-size: 14px;
         line-height: 22px;
         a {
-          color: #0066ff;
+          
           &:hover{
             text-decoration: underline;
             color: #2E90FA;
@@ -685,6 +685,8 @@
     }
   }
   .vacancy {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
     h1 {
       font-family: "Inter";
       font-style: normal;

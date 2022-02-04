@@ -128,8 +128,7 @@
 }
 
 .modal .modal-content form .input-label ._error {
-  -webkit-box-shadow: 0 0 15px red;
-          box-shadow: 0 0 15px red;
+  border-color: #F04438;
 }
 
 .modal .modal-content form p {
@@ -439,10 +438,6 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 22px;
-}
-
-.containerfull .navbar .navbar-left .lang a {
-  color: #0066ff;
 }
 
 .containerfull .navbar .navbar-left .lang a:hover {
@@ -833,6 +828,11 @@
 .containerfull .contacts .rowcontacts a {
   margin-right: 48px;
   padding-top: 28px;
+}
+
+.containerfull .vacancy {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10%;
 }
 
 .containerfull .vacancy h1 {

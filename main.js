@@ -158,30 +158,36 @@ window.addEventListener("click", windowOnClick);
 
 //input file
 function uploadFile(target) {
-  document.getElementById("file-name").innerHTML = target.files[0].name;
+  document.getElementById("formImage").innerHTML = target.files[0].name;
 }
 
 //scrollOnVacancy
+document.querySelectorAll('a[href^="#"').forEach(link => {
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-};
+      let href = this.getAttribute('href').substring(1);
 
+      const scrollTarget = document.getElementById(href);
+
+      const topOffset = document.querySelector('.scrollto').offsetHeight;
+      // const topOffset = 0; // если не нужен отступ сверху 
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - topOffset;
+
+      window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth'
+      });
+  });
+});
 //form
 "use strict"
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
   form.addEventListener("submit", formSend);
-
+  form.addEventListener("change",changeValidate)
   async function formSend(e) {
     e.preventDefault();
 
@@ -206,6 +212,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function changeValidate(form) {
+    let error = 0;
+    let formReq = document.querySelectorAll("._req");
+
+    for (let index = 0; index < formReq.length; index++) {
+      const input = formReq[index];
+      formRemoveError(input);
+
+      if (input.classList.contains("_email")) {
+        if (emailTest(input)) {
+          formAddError(input);
+          error++;
+        }
+      } else if (
+        input.getAttribute("type") === "checkbox" &&
+        input.checked === false
+      ) {
+        formAddError(input);
+        error++;
+      } else {
+        if (input.value === "") {
+          formAddError(input);
+          error++;
+        }
+      }
+    }
+    return error
+  }
   function formValidate(form) {
     let error = 0;
     let formReq = document.querySelectorAll("._req");
