@@ -110,6 +110,13 @@ var dotPulse = function () {
 };
 
 dotPulse();
+dotPulse();
+dotPulse();
+dotPulse();
+dotPulse();
+dotPulse();
+dotPulse();
+dotPulse();
 
 //modal
 const modal = document.querySelector(".modal");
