@@ -200,6 +200,7 @@
 }
 
 .modal .modal-content form .sumbit {
+  width: 100%;
   height: auto;
   margin-top: 28px;
   margin-bottom: 20px;

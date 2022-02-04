@@ -3805,21 +3805,21 @@
           <span class="close-button1">&times;</span>
         </div>
 
-        <form action="send.php" method="post" id="form">
+        <form action="#" id="form">
           <div class="input-label">
-            <label for="GET-name">Имя</label>
-            <input id="GET-Name" class="form__input _req" type="text" name="name" />
+            <label for="formName">Имя</label>
+            <input id="formName" class="form__input _req" type="text" name="name" />
           </div>
 
           <div class="input-label">
-            <label for="GET-Email">E-mail</label>
-            <input id="GET-Email" class="form__input _email _req " type="text" name="email" />
+            <label for="formEmail">E-mail</label>
+            <input id="formEmail" class="form__input _email _req " type="text" name="email" />
           </div>
 
           <div class="input-label">
-            <label for="GET-Comments">Комментарии</label>
+            <label for="formMessage">Комментарии</label>
             <p>Расскажите в свободной форме о себе</p>
-            <textarea class="form__input _req" name="comments" id="GET-Comments"></textarea>
+            <textarea class="form__input _req" name="message" id="formMessage"></textarea>
           </div>
 
           <label for="file">Резюме</label>
@@ -3827,6 +3827,7 @@
             <input
               type="file"
               id="file"
+              name="file"
               class="inputfile"
               onchange="uploadFile(this)"
             />
@@ -3837,7 +3838,7 @@
               </label>
             </div>
           </div>
-          <input class="sumbit" type="submit" value="Отправить заявку" />
+          <button class="sumbit" type="submit">Отправить заявку</button> 
           <p>
             Нажимая кнопку «Отпарвить заявку», я принимаю условия
             <a href="#">пользовательского соглашения</a>
