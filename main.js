@@ -1,3 +1,4 @@
+//anim number
 window.addEventListener("scroll", function () {
   var counters = document.querySelectorAll(".value-number");
   const speed = 2000;
@@ -19,7 +20,7 @@ window.addEventListener("scroll", function () {
     animate();
   });
 });
-//header&&value
+//add class navbar&&number
 const header = () => {
   window.onscroll = function () {
     myFunction(), myValue();
@@ -90,6 +91,8 @@ var dotPulse = function () {
     },
   });
 
+  
+
   /*var pinTimeline = new TimelineMax({
     repeat: 1,
     delay: animationTime,
@@ -150,6 +153,21 @@ window.addEventListener("click", windowOnClick);
 function uploadFile(target) {
   document.getElementById("file-name").innerHTML = target.files[0].name;
 }
+
+//scrollOnVacancy
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
 
 //form
 document.addEventListener("DOMContentLoaded", function () {

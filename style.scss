@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
 
   a:nth-child(1) {
@@ -12,19 +13,26 @@
     font-size: 22px;
     color: #0066ff;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: #2e90fa;
+      .link2 {
+        display: flex;
+        background: url(./image/link2.svg);
+      }
+    }
   }
   a:nth-child(2) {
+    width: 18px;
+    height: 18px;
     display: flex;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    background: url(./image/link.svg);
   }
 }
 * {
   margin: 0;
   padding: 0;
+
   button {
     border: none;
     cursor: pointer;
@@ -43,7 +51,7 @@
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   .form__body {
     position: relative;
-    ._sending::after{
+    ._sending::after {
       opacity: 1;
       visibility: visible;
     }
@@ -54,12 +62,12 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(51, 51, 51, 0.9) url(./image/load.gif) center / 50px no-repeat;
+      background: rgba(51, 51, 51, 0.9) url(./image/load.gif) center / 50px
+        no-repeat;
       opacity: 0;
       visibility: hidden;
       transition: all 0.5s ease 0s;
     }
-     
   }
   .modal-content {
     position: absolute;
@@ -89,7 +97,6 @@
       color: #101828;
       letter-spacing: -0.5px;
     }
-    
 
     form {
       padding: 0 32px 48px 32px;
@@ -243,6 +250,7 @@
           font-weight: bold;
           font-size: 68px;
           margin-bottom: 20px;
+          letter-spacing: -2px;
         }
         p {
           font-family: "Inter";
@@ -253,7 +261,13 @@
           color: #667085;
         }
         a {
+          text-decoration: none;
           color: #0066ff;
+
+          &:hover {
+            text-decoration: underline;
+            color: #2e90fa;
+          }
         }
       }
       .img {
@@ -280,6 +294,7 @@
           font-weight: bold;
           font-size: 68px;
           margin-bottom: 20px;
+          letter-spacing: -2px;
         }
         p {
           font-family: "Inter";
@@ -289,9 +304,7 @@
           line-height: 38px;
           color: #667085;
         }
-        a {
-          color: #0066ff;
-        }
+        
       }
       .img {
         flex-shrink: 0;
@@ -335,6 +348,9 @@
         font-size: 14px;
         color: #101828;
         text-decoration: none;
+        &:hover{
+          color: #0075FF;
+        }
       }
       .lang {
         margin: 0 32px;
@@ -345,10 +361,14 @@
         line-height: 22px;
         a {
           color: #0066ff;
+          &:hover{
+            text-decoration: underline;
+            color: #2E90FA;
+          }
           &:first-child {
             margin-right: 12px;
             color: #98a2b3;
-            text-decoration: none;
+            
           }
         }
       }
@@ -416,6 +436,7 @@
             font-style: normal;
             font-weight: bold;
             font-size: 68px;
+            letter-spacing: -2px;
           }
           p {
             font-family: "Inter";
@@ -426,7 +447,13 @@
             color: #667085;
           }
           a {
+            text-decoration: none;
             color: #0066ff;
+  
+            &:hover {
+              text-decoration: underline;
+              color: #2E90FA;
+            }
           }
         }
         .img {
@@ -497,6 +524,7 @@
         color: #667085;
         a {
           color: #667085;
+          text-decoration: underline;
         }
       }
       .imgContextAleph {
@@ -505,7 +533,7 @@
     }
     .more {
       @extend %more;
-      text-decoration: underline;
+      
     }
     .map {
       display: flex;
@@ -519,6 +547,7 @@
         font-style: normal;
         font-weight: bold;
         font-size: 68px;
+        letter-spacing: -2px;
       }
       p {
         margin-top: 28px;
@@ -528,6 +557,9 @@
         font-weight: 500;
         font-size: 36px;
         color: #667085;
+      }
+      svg {
+        width: 848px;
       }
       .map-dots circle {
         fill: #667085;
@@ -540,6 +572,7 @@
         font-weight: bold;
         font-size: 68px;
         color: #ffffff;
+        letter-spacing: -2px;
       }
       p {
         margin-top: 12px;
@@ -689,8 +722,17 @@
         margin-bottom: 57px;
         .more {
           @extend %more;
+          text-decoration: none;
           margin-top: 20px;
           justify-content: left;
+          a:hover {
+            text-decoration: underline;
+            color: #2e90fa;
+            &:nth-child(2) {
+              display: flex;
+              background: url(./image/link2.svg);
+            }
+          }
         }
         &:last-child {
           margin-bottom: 0;
@@ -718,7 +760,7 @@
         margin-bottom: 56px;
         font-family: "Roboto";
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 20px;
         line-height: 32px;
         color: rgba(249, 249, 249, 0.7);
@@ -732,6 +774,9 @@
         color: #f9f9f9;
         background: #fa0c62;
         border-radius: 8px;
+        &:hover{
+          background: #F63D68;
+        }
       }
     }
     .writeImg {
@@ -749,6 +794,16 @@
       margin: auto 208px;
       .info {
         .context {
+          &:nth-child(2) {
+            .text {
+              padding-left: 143px;
+            }
+          }
+          &:nth-child(3) {
+            .text {
+              padding-right: 143px;
+            }
+          }
           .img {
             width: 50%;
             height: 100%;
@@ -784,6 +839,16 @@
     .context-first {
       display: flex;
       .context {
+        &:nth-child(2) {
+          .text {
+            padding-left: 126px;
+          }
+        }
+        &:nth-child(3) {
+          .text {
+            padding-right: 126px;
+          }
+        }
         .img {
           img {
             border-radius: 20px;
@@ -911,6 +976,17 @@
         .rowcontacts {
           flex-wrap: wrap;
           padding: 0 64px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 849px) {
+  .containerfull {
+    .container {
+      .map {
+        svg {
+          width: 100%;
         }
       }
     }
