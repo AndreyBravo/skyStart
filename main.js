@@ -158,7 +158,7 @@ window.addEventListener("click", windowOnClick);
 
 //input file
 function uploadFile(target) {
-  document.getElementById("formImage").innerHTML = target.files[0].name;
+  document.getElementById("file-name").innerHTML = target.files[0].name;
 }
 
 //scrollOnVacancy
@@ -187,7 +187,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
   form.addEventListener("submit", formSend);
-  form.addEventListener("change",changeValidate)
+  
   async function formSend(e) {
     e.preventDefault();
 
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function formValidate(form) {
     let error = 0;
     let formReq = document.querySelectorAll("._req");
-
+    form.addEventListener("change",changeValidate)
     for (let index = 0; index < formReq.length; index++) {
       const input = formReq[index];
       formRemoveError(input);
