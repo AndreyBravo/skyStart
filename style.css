@@ -12,44 +12,33 @@
           justify-content: center;
 }
 
-.containerfull .container .more .moreCont, .containerfull .vacancy ul li .more .moreCont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.containerfull .container .more .moreCont:hover a:nth-child(1), .containerfull .vacancy ul li .more .moreCont:hover a:nth-child(1) {
-  color: #2e90fa;
+.containerfull .container .more a:hover span, .containerfull .vacancy ul li .more a:hover span {
+  color: #2E90FA;
   text-decoration: underline;
 }
 
-.containerfull .container .more .moreCont:hover a:nth-child(2), .containerfull .vacancy ul li .more .moreCont:hover a:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url(./image/link2.svg);
+.containerfull .container .more a:hover path, .containerfull .vacancy ul li .more a:hover path {
+  fill: #2E90FA;
 }
 
-.containerfull .container .more a:nth-child(1), .containerfull .vacancy ul li .more a:nth-child(1) {
+.containerfull .container .more a, .containerfull .vacancy ul li .more a {
+  text-decoration: none;
+}
+
+.containerfull .container .more a span, .containerfull .vacancy ul li .more a span {
   margin-right: 12px;
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
   color: #0066ff;
-  text-decoration: none;
+  letter-spacing: -0.005em;
 }
 
-.containerfull .container .more a:nth-child(2), .containerfull .vacancy ul li .more a:nth-child(2) {
+.containerfull .container .more a svg, .containerfull .vacancy ul li .more a svg {
   width: 18px;
   height: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url(./image/link.svg);
+  fill: #0066ff;
 }
 
 * {
@@ -905,23 +894,10 @@
 }
 
 .containerfull .vacancy ul li .more {
-  text-decoration: none;
   margin-top: 20px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-}
-
-.containerfull .vacancy ul li .more a:hover {
-  text-decoration: underline;
-  color: #2e90fa;
-}
-
-.containerfull .vacancy ul li .more a:hover:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url(./image/link2.svg);
 }
 
 .containerfull .vacancy ul li:last-child {
@@ -1283,17 +1259,8 @@
   .containerfull .container .contextAleph .contextValue h4 {
     padding: 0;
   }
-  .containerfull .container .more {
-    margin: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .containerfull .container .more a:first-child {
+  .containerfull .container .more span {
     font-size: 17px;
-  }
-  .containerfull .container .more a:last-child {
-    width: 17px;
   }
   .containerfull .container .map {
     margin-top: 97px;

@@ -4,38 +4,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .moreCont {
-    display: flex;
-    align-items: center;
-    &:hover {
-      a {
-        &:nth-child(1) {
-          color: #2e90fa;
-          text-decoration: underline;
-        }
-        &:nth-child(2) {
-          display: flex;
-          background: url(./image/link2.svg);
-        }
-      }
+  
+  a:hover{
+    span{
+      color: #2E90FA;
+      text-decoration: underline;
+    }
+    path{
+      fill:#2E90FA;
+    }
+    
+  }
+  
+  a{
+    text-decoration: none;
+    span{
+      margin-right: 12px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      color: #0066ff;
+      letter-spacing: -0.005em;
+    }
+    svg{
+      width: 18px;
+      height: 18px;
+      fill:#0066ff;
     }
   }
-
-  a:nth-child(1) {
-    margin-right: 12px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    color: #0066ff;
-    text-decoration: none;
-  }
-  a:nth-child(2) {
-    width: 18px;
-    height: 18px;
-    display: flex;
-    background: url(./image/link.svg);
-  }
+  
+ 
 }
 * {
   margin: 0;
@@ -746,17 +745,10 @@
         margin-bottom: 57px;
         .more {
           @extend %more;
-          text-decoration: none;
+          
           margin-top: 20px;
           justify-content: left;
-          a:hover {
-            text-decoration: underline;
-            color: #2e90fa;
-            &:nth-child(2) {
-              display: flex;
-              background: url(./image/link2.svg);
-            }
-          }
+          
         }
         &:last-child {
           margin-bottom: 0;
@@ -1150,17 +1142,11 @@
         }
       }
       .more {
-        
-        margin: auto;
-        justify-content: center;
-        a {
-          &:first-child {
-            font-size: 17px;
-          }
-          &:last-child {
-            width: 17px;
-          }
+        span{
+          font-size: 17px;
         }
+        
+        
       }
       .map {
         margin-top: 97px;
