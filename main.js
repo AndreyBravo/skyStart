@@ -170,7 +170,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
       const scrollTarget = document.getElementById(href);
 
       const topOffset = document.querySelector('.scrollto').offsetHeight;
-      // const topOffset = 0; // если не нужен отступ сверху 
+      //const topOffset = 0; // если не нужен отступ сверху 
       const elementPosition = scrollTarget.getBoundingClientRect().top;
       const offsetPosition = elementPosition - topOffset;
 

@@ -27,7 +27,6 @@
 
 .containerfull .container .more a span, .containerfull .vacancy ul li .more a span {
   margin-right: 12px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -49,6 +48,10 @@
 * button {
   border: none;
   cursor: pointer;
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .modal {
@@ -112,7 +115,6 @@
 
 .modal .modal-content h1 {
   margin: 48px 32px 20px 32px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -130,7 +132,7 @@
 }
 
 .modal .modal-content form p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -144,7 +146,7 @@
 }
 
 .modal .modal-content form p a {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -174,7 +176,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   padding: 8px 16px 8px 16px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -202,7 +204,6 @@
   margin-top: 28px;
   margin-bottom: 20px;
   padding: 16px 0;
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -216,7 +217,7 @@
 
 .modal .modal-content form label {
   width: 100%;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -291,7 +292,6 @@
 }
 
 .containerfull .context-first .context .text h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -300,7 +300,6 @@
 }
 
 .containerfull .context-first .context .text p {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -347,7 +346,6 @@
 }
 
 .containerfull .info .context .text h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -356,7 +354,6 @@
 }
 
 .containerfull .info .context .text p {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -418,7 +415,6 @@
 
 .containerfull .navbar .navbar-left a {
   padding: 12px 16px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -458,7 +454,6 @@
 
 .containerfull .navbar .navbar-left button {
   padding: 12px 16px;
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -492,7 +487,7 @@
 }
 
 .containerfull .footer a:nth-child(1) {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -501,7 +496,7 @@
 
 .containerfull .footer a:nth-child(2) {
   margin-left: 24px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -539,7 +534,6 @@
 }
 
 .containerfull .container .info .context .text h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -547,7 +541,6 @@
 }
 
 .containerfull .container .info .context .text p {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -610,7 +603,6 @@
 
 .containerfull .container .contextAleph .contextValue h1 {
   padding-top: 64px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
@@ -619,7 +611,6 @@
 }
 
 .containerfull .container .contextAleph .contextValue h4 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -628,7 +619,6 @@
 }
 
 .containerfull .container .contextAleph h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -637,7 +627,7 @@
 .containerfull .container .contextAleph p {
   margin-top: 20px;
   margin-bottom: 56px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -669,7 +659,6 @@
 }
 
 .containerfull .container .map h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -679,7 +668,6 @@
 .containerfull .container .map p {
   margin-top: 28px;
   margin-bottom: 75px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -695,7 +683,6 @@
 }
 
 .containerfull .container .valuecontainer h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -707,7 +694,7 @@
 .containerfull .container .valuecontainer p {
   margin-top: 12px;
   margin-bottom: 48px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -728,7 +715,6 @@
 .containerfull .container .valuecontainer .rowImg h1 {
   margin-top: 36px;
   margin-bottom: 20px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -739,7 +725,6 @@
 
 .containerfull .container .valuecontainer .rowImg p {
   margin: 0;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -812,7 +797,6 @@
 }
 
 .containerfull .contacts h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -820,7 +804,7 @@
 
 .containerfull .contacts p {
   padding-top: 12px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -847,7 +831,6 @@
 }
 
 .containerfull .vacancy h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -857,7 +840,6 @@
 
 .containerfull .vacancy h2 {
   padding-bottom: 16px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -869,7 +851,7 @@
 .containerfull .vacancy h6 {
   padding-top: 20px;
   padding-bottom: 48px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -879,7 +861,6 @@
 }
 
 .containerfull .vacancy p {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -927,7 +908,6 @@
 }
 
 .containerfull .writecontainer .writeContext h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -938,7 +918,7 @@
 .containerfull .writecontainer .writeContext p {
   margin-top: 24px;
   margin-bottom: 56px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -948,7 +928,6 @@
 
 .containerfull .writecontainer .writeContext .trigger {
   padding: 16px 32px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1185,7 +1164,6 @@
     margin-bottom: 40px;
   }
   .containerfull .container .info .context .text h1 {
-    font-family: "Inter";
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
@@ -1193,7 +1171,6 @@
     margin-bottom: 20px;
   }
   .containerfull .container .info .context .text p {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -1227,7 +1204,6 @@
     padding: 64px;
   }
   .containerfull .container .contextAleph h1 {
-    font-family: "Inter";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -1235,7 +1211,7 @@
   }
   .containerfull .container .contextAleph p {
     margin-bottom: 0;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -1271,7 +1247,6 @@
     margin-top: 97px;
   }
   .containerfull .container .map h1 {
-    font-family: "Inter";
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
@@ -1279,7 +1254,6 @@
   .containerfull .container .map p {
     margin-top: 18px;
     margin-bottom: 56px;
-    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
