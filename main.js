@@ -110,13 +110,11 @@ var dotPulse = function () {
 };
 
 dotPulse();
-dotPulse();
-dotPulse();
-dotPulse();
-dotPulse();
-dotPulse();
-dotPulse();
-dotPulse();
+setTimeout(dotPulse,100);
+setTimeout(dotPulse,400);
+setTimeout(dotPulse,700);
+setTimeout(dotPulse,1000);
+
 
 //modal
 const modal = document.querySelector(".modal");

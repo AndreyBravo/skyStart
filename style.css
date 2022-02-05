@@ -12,6 +12,27 @@
           justify-content: center;
 }
 
+.containerfull .container .more .moreCont, .containerfull .vacancy ul li .more .moreCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerfull .container .more .moreCont:hover a:nth-child(1), .containerfull .vacancy ul li .more .moreCont:hover a:nth-child(1) {
+  color: #2e90fa;
+  text-decoration: underline;
+}
+
+.containerfull .container .more .moreCont:hover a:nth-child(2), .containerfull .vacancy ul li .more .moreCont:hover a:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(./image/link2.svg);
+}
+
 .containerfull .container .more a:nth-child(1), .containerfull .vacancy ul li .more a:nth-child(1) {
   margin-right: 12px;
   font-family: "Inter";
@@ -20,18 +41,6 @@
   font-size: 22px;
   color: #0066ff;
   text-decoration: none;
-}
-
-.containerfull .container .more a:nth-child(1):hover, .containerfull .vacancy ul li .more a:nth-child(1):hover {
-  text-decoration: underline;
-  color: #2e90fa;
-}
-
-.containerfull .container .more a:nth-child(1):hover .link2, .containerfull .vacancy ul li .more a:nth-child(1):hover .link2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url(./image/link2.svg);
 }
 
 .containerfull .container .more a:nth-child(2), .containerfull .vacancy ul li .more a:nth-child(2) {
@@ -128,7 +137,7 @@
 }
 
 .modal .modal-content form .input-label ._error {
-  border-color: #F04438;
+  border-color: #f04438;
 }
 
 .modal .modal-content form p {
@@ -419,6 +428,7 @@
 }
 
 .containerfull .navbar .navbar-left a {
+  padding: 12px 16px;
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
@@ -428,7 +438,9 @@
 }
 
 .containerfull .navbar .navbar-left a:hover {
-  color: #0075FF;
+  color: #0075ff;
+  background: rgba(208, 213, 221, 0.3);
+  border-radius: 8px;
 }
 
 .containerfull .navbar .navbar-left .lang {
@@ -442,7 +454,7 @@
 
 .containerfull .navbar .navbar-left .lang a:hover {
   text-decoration: underline;
-  color: #2E90FA;
+  color: #2e90fa;
 }
 
 .containerfull .navbar .navbar-left .lang a:first-child {
@@ -556,7 +568,7 @@
 
 .containerfull .container .info .context .text a:hover {
   text-decoration: underline;
-  color: #2E90FA;
+  color: #2e90fa;
 }
 
 .containerfull .container .info .context .img {
@@ -693,6 +705,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
+  line-height: 68px;
   color: #ffffff;
   letter-spacing: -2px;
 }
@@ -704,7 +717,9 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 32px;
   color: #e4e7ec;
+  letter-spacing: 0.0038em;
 }
 
 .containerfull .container .valuecontainer .rowImg {
@@ -723,7 +738,9 @@
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  line-height: 38px;
   color: #101828;
+  letter-spacing: -0.0075em;
 }
 
 .containerfull .container .valuecontainer .rowImg p {
@@ -840,6 +857,8 @@
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
+  letter-spacing: -2px;
+  color: #101828;
 }
 
 .containerfull .vacancy h2 {
@@ -848,6 +867,9 @@
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  line-height: 38px;
+  color: #101828;
+  letter-spacing: -0.0075em;
 }
 
 .containerfull .vacancy h6 {
@@ -857,6 +879,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.0038em;
   color: #667085;
 }
 
@@ -866,6 +890,7 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 38px;
+  letter-spacing: -0.0075em;
   color: #667085;
 }
 
@@ -952,7 +977,7 @@
 }
 
 .containerfull .writecontainer .writeContext .trigger:hover {
-  background: #F63D68;
+  background: #f63d68;
 }
 
 .containerfull .writecontainer .writeImg {
@@ -1259,7 +1284,6 @@
     padding: 0;
   }
   .containerfull .container .more {
-    width: 40%;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1421,9 +1445,6 @@
   }
   .containerfull .container .contextAleph {
     border-radius: 6px;
-  }
-  .containerfull .container .more {
-    width: 90%;
   }
   .containerfull .container .more a {
     font-size: 17px;
