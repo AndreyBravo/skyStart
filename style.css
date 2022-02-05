@@ -46,6 +46,7 @@
 }
 
 * button {
+  font-family: inherit;
   border: none;
   cursor: pointer;
 }
@@ -691,7 +692,7 @@ body {
   letter-spacing: -2px;
 }
 
-.containerfull .container .valuecontainer p {
+.containerfull .container .valuecontainer h2 {
   margin-top: 12px;
   margin-bottom: 48px;
   font-family: "Roboto", sans-serif;
@@ -1261,7 +1262,7 @@ body {
   .containerfull .container .valuecontainer h1 {
     font-size: 42px;
   }
-  .containerfull .container .valuecontainer p {
+  .containerfull .container .valuecontainer h2 {
     font-size: 16px;
     margin: 10px 0 28px 0;
   }

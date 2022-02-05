@@ -168,9 +168,13 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
       let href = this.getAttribute('href').substring(1);
 
       const scrollTarget = document.getElementById(href);
-
-      const topOffset = document.querySelector('.scrollto').offsetHeight;
-      //const topOffset = 0; // если не нужен отступ сверху 
+      const header = document.getElementById('myHeader')
+      let topOffset;
+      if(header.classList.contains('sticky')){
+        topOffset = document.querySelector('.scrollto').offsetHeight;
+      }else{
+        topOffset = 150;
+      }      
       const elementPosition = scrollTarget.getBoundingClientRect().top;
       const offsetPosition = elementPosition - topOffset;
 
