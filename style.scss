@@ -2,56 +2,51 @@
   margin: 0;
   padding: 0;
   display: flex;
-  
+
   justify-content: center;
-  
-  a:hover{
-    
-    span{
-      color: #2E90FA;
+
+  a:hover {
+    span {
+      color: #2e90fa;
       text-decoration: underline;
     }
-    path{
-      fill:#2E90FA;
+    path {
+      fill: #2e90fa;
     }
-    
   }
-  
-  a{
+
+  a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    span{
+    span {
       margin-right: 12px;
-      
+
       font-style: normal;
       font-weight: bold;
       font-size: 22px;
       color: #0066ff;
       letter-spacing: -0.005em;
     }
-    svg{
+    svg {
       width: 18px;
       height: 18px;
-      fill:#0066ff;
+      fill: #0066ff;
     }
   }
-  
- 
 }
 * {
   margin: 0;
   padding: 0;
 
   button {
-    font-family:inherit;
+    font-family: inherit;
     border: none;
     cursor: pointer;
   }
 }
-body{
+body {
   font-family: "Inter", sans-serif;
-
 }
 .modal {
   position: fixed;
@@ -99,12 +94,12 @@ body{
       0px 5px 22px rgba(71, 78, 98, 0.12), 0px 7px 8px rgba(71, 78, 98, 0.12);
     border-radius: 12px;
 
-    .min-width_576 {
+    .min-width--576 {
       display: none;
     }
     h1 {
       margin: 48px 32px 20px 32px;
-      
+
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
@@ -186,7 +181,7 @@ body{
         margin-top: 28px;
         margin-bottom: 20px;
         padding: 16px 0;
-        
+
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -248,8 +243,8 @@ body{
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-.containerfull {
-  .context-first {
+.container-full {
+  .context-first--1344 {
     display: none;
     overflow: hidden;
     margin-top: 60px;
@@ -259,9 +254,8 @@ body{
       justify-content: space-between;
       align-items: center;
 
-      .text {
+      .context__text {
         h1 {
-          
           font-style: normal;
           font-weight: bold;
           font-size: 68px;
@@ -269,7 +263,6 @@ body{
           letter-spacing: -2px;
         }
         p {
-          
           font-style: normal;
           font-weight: 500;
           font-size: 36px;
@@ -286,7 +279,7 @@ body{
           }
         }
       }
-      .img {
+      .context__img {
         width: 50%;
         flex-shrink: 0;
         img {
@@ -302,10 +295,9 @@ body{
       justify-content: space-between;
       align-items: center;
 
-      .text {
+      .context__text {
         width: 617px;
         h1 {
-          
           font-style: normal;
           font-weight: bold;
           font-size: 68px;
@@ -313,7 +305,6 @@ body{
           letter-spacing: -2px;
         }
         p {
-          
           font-style: normal;
           font-weight: 500;
           font-size: 36px;
@@ -321,7 +312,7 @@ body{
           color: #667085;
         }
       }
-      .img {
+      .context__img {
         flex-shrink: 0;
         img {
           object-fit: cover;
@@ -353,12 +344,12 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 16px 32px;
-    .navbar-left {
+    .navbar__menu {
       display: flex;
       align-items: center;
       a {
         padding: 12px 16px;
-        
+
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -370,7 +361,7 @@ body{
           border-radius: 8px;
         }
       }
-      .lang {
+      .navbar__lang {
         margin: 0 32px;
         font-family: "Roboto", sans-serif;
         font-style: normal;
@@ -392,7 +383,7 @@ body{
       }
       button {
         padding: 12px 16px;
-        
+
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -448,16 +439,14 @@ body{
           display: flex;
           padding: 130px 0;
         }
-        .text {
+        .context__text {
           h1 {
-            
             font-style: normal;
             font-weight: bold;
             font-size: 68px;
             letter-spacing: -2px;
           }
           p {
-            
             font-style: normal;
             font-weight: 500;
             font-size: 36px;
@@ -474,7 +463,7 @@ body{
             }
           }
         }
-        .img {
+        .context__img {
           width: 744px;
           height: 566px;
           img {
@@ -487,7 +476,7 @@ body{
       }
     }
 
-    .contextAleph {
+    .context-aleph {
       margin-top: 144px;
 
       margin-bottom: 56px;
@@ -510,7 +499,7 @@ body{
 
         h1 {
           padding-top: 64px;
-          
+
           font-style: normal;
           font-weight: 600;
           font-size: 60px;
@@ -518,7 +507,6 @@ body{
           margin-bottom: 12px;
         }
         h4 {
-          
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
@@ -527,7 +515,6 @@ body{
         }
       }
       h1 {
-        
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
@@ -549,7 +536,7 @@ body{
         margin-bottom: 56px;
       }
     }
-    .more {
+    .detail-aleph {
       @extend %more;
     }
     .map {
@@ -560,7 +547,6 @@ body{
       margin-top: 144px;
       text-align: center;
       h1 {
-        
         font-style: normal;
         font-weight: bold;
         font-size: 68px;
@@ -569,7 +555,7 @@ body{
       p {
         margin-top: 28px;
         margin-bottom: 75px;
-        
+
         font-style: normal;
         font-weight: 500;
         font-size: 36px;
@@ -582,9 +568,8 @@ body{
         fill: #667085;
       }
     }
-    .valuecontainer {
+    .container__value {
       h1 {
-        
         font-style: normal;
         font-weight: bold;
         font-size: 68px;
@@ -603,13 +588,13 @@ body{
         color: #e4e7ec;
         letter-spacing: 0.0038em;
       }
-      .rowImg {
+      .value__row {
         display: flex;
         justify-content: center;
         h1 {
           margin-top: 36px;
           margin-bottom: 20px;
-          
+
           font-style: normal;
           font-weight: bold;
 
@@ -620,7 +605,7 @@ body{
         }
         p {
           margin: 0;
-          
+
           font-style: normal;
           font-weight: 500;
           font-size: 36px;
@@ -628,7 +613,7 @@ body{
           color: #344054;
           letter-spacing: -0.0075em;
         }
-        .rowcontent {
+        .row-content {
           width: 480px;
           padding: 48px 32px;
 
@@ -648,10 +633,10 @@ body{
             background: #d1fadf;
           }
         }
-        .row-content__1140 {
+        .row-content-1140 {
           display: none;
           justify-content: space-between;
-          .rowcontent__1140 {
+          .row-content-1140__container {
             text-align: left;
             width: 50%;
             padding: 48px 32px;
@@ -683,7 +668,6 @@ body{
     background: #f2f4f7;
     border-radius: 20px;
     h1 {
-      
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -697,7 +681,7 @@ body{
       font-size: 20px;
       color: #667085;
     }
-    .rowcontacts {
+    .row-contacts {
       display: flex;
       justify-content: center;
       a {
@@ -710,7 +694,6 @@ body{
     scroll-behavior: smooth;
     scroll-padding-top: 10%;
     h1 {
-      
       font-style: normal;
       font-weight: bold;
       font-size: 68px;
@@ -719,7 +702,7 @@ body{
     }
     h2 {
       padding-bottom: 16px;
-      
+
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -739,7 +722,6 @@ body{
       color: #667085;
     }
     p {
-      
       font-style: normal;
       font-weight: 500;
       font-size: 36px;
@@ -753,12 +735,11 @@ body{
       padding: 0;
       li {
         margin-bottom: 57px;
-        .more {
+        .detail-aleph {
           @extend %more;
-          
+
           margin-top: 20px;
           justify-content: left;
-          
         }
         &:last-child {
           margin-bottom: 0;
@@ -766,15 +747,14 @@ body{
       }
     }
   }
-  .writecontainer {
+  .container__write {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 72px 0;
-    .writeContext {
+    .write__context {
       width: 45%;
       h1 {
-       
         font-style: normal;
         font-weight: bold;
         font-size: 68px;
@@ -793,7 +773,7 @@ body{
       }
       .trigger {
         padding: 16px 32px;
-        
+
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -805,7 +785,7 @@ body{
         }
       }
     }
-    .writeImg {
+    .write__img {
       width: 45%;
       img {
         border-radius: 20px;
@@ -816,22 +796,22 @@ body{
 }
 
 @media screen and (max-width: 1921px) {
-  .containerfull {
+  .container-full {
     .container {
       margin: auto 208px;
       .info {
         .context {
           &:nth-child(2) {
-            .text {
+            .context__text {
               padding-left: 143px;
             }
           }
           &:nth-child(3) {
-            .text {
+            .context__text {
               padding-right: 143px;
             }
           }
-          .img {
+          .context__img {
             width: 50%;
             height: 100%;
             img {
@@ -850,7 +830,7 @@ body{
   }
 }
 @media screen and (max-width: 1601px) {
-  .containerfull {
+  .container-full {
     .container {
       margin: auto 48px;
       .map {
@@ -862,21 +842,21 @@ body{
   }
 }
 @media screen and (max-width: 1345px) {
-  .containerfull {
-    .context-first {
+  .container-full {
+    .context-first--1344 {
       display: flex;
       .context {
         &:nth-child(2) {
-          .text {
+          .context__text {
             padding-left: 126px;
           }
         }
         &:nth-child(3) {
-          .text {
+          .context__text {
             padding-right: 126px;
           }
         }
-        .img {
+        .context__img {
           img {
             border-radius: 20px;
           }
@@ -891,14 +871,14 @@ body{
           &:first-child {
             display: none;
           }
-          .img {
+          .context__img {
             img {
               border-radius: 20px;
             }
           }
         }
       }
-      .contextAleph {
+      .context-aleph {
         .contextValue {
           padding: 0 32px;
         }
@@ -909,7 +889,7 @@ body{
         }
       }
       .contacts {
-        .rowcontacts {
+        .row-contacts {
           display: flex;
           align-items: center;
           a {
@@ -919,8 +899,8 @@ body{
           }
         }
       }
-      .writecontainer {
-        .writeImg {
+      .container__write {
+        .write__img {
           img {
             width: 100%;
           }
@@ -931,11 +911,11 @@ body{
 }
 
 @media screen and (max-width: 1141px) {
-  .containerfull {
-    .context-first {
+  .container-full {
+    .context-first--1344 {
       display: flex;
       .context {
-        .img {
+        .context__img {
           img {
             border-radius: 17px;
           }
@@ -947,29 +927,29 @@ body{
       .info {
         .context {
           justify-content: space-between;
-          .img {
+          .context__img {
             img {
               border-radius: 17px;
             }
           }
           &:nth-child(2) {
-            .text {
+            .context__text {
               padding-left: 16px;
             }
           }
           &:nth-child(3) {
-            .text {
+            .context__text {
               padding-right: 16px;
             }
           }
         }
       }
 
-      .valuecontainer {
-        .rowImg {
+      .container__value {
+        .value__row {
           flex-wrap: wrap;
           justify-content: space-between;
-          .rowcontent {
+          .row-content {
             &:nth-child(1) {
               width: 100%;
             }
@@ -980,16 +960,16 @@ body{
               display: none;
             }
           }
-          .row-content__1140 {
+          .row-content-1140 {
             display: flex;
           }
         }
       }
-      .writecontainer {
-        .writeContext {
+      .container__write {
+        .write__context {
           width: 49%;
         }
-        .writeImg {
+        .write__img {
           width: 49%;
           margin: 0;
           padding-right: 0;
@@ -1000,7 +980,7 @@ body{
         }
       }
       .contacts {
-        .rowcontacts {
+        .row-contacts {
           flex-wrap: wrap;
           padding: 0 64px;
         }
@@ -1009,7 +989,7 @@ body{
   }
 }
 @media screen and (max-width: 849px) {
-  .containerfull {
+  .container-full {
     .container {
       .map {
         svg {
@@ -1020,8 +1000,8 @@ body{
   }
 }
 @media screen and (max-width: 769px) {
-  .containerfull {
-    .context-first {
+  .container-full {
+    .context-first--1344 {
       display: none;
     }
     .navbar {
@@ -1031,11 +1011,11 @@ body{
           width: 166px;
         }
       }
-      .navbar-left {
+      .navbar__menu {
         img {
           width: 32px;
         }
-        .lang {
+        .navbar__lang {
           margin: 0;
           margin-right: 20px;
         }
@@ -1064,21 +1044,20 @@ body{
             display: flex;
             flex-direction: column-reverse;
             padding: 0;
-            .text {
+            .context__text {
               padding: 0;
             }
           }
           &:nth-child(3) {
-            .text {
+            .context__text {
               padding: 0;
             }
           }
-          .text {
+          .context__text {
             width: 65%;
 
             margin-bottom: 40px;
             h1 {
-              
               font-style: normal;
               font-weight: bold;
               font-size: 42px;
@@ -1086,7 +1065,6 @@ body{
               margin-bottom: 20px;
             }
             p {
-              
               font-style: normal;
               font-weight: 500;
               font-size: 24px;
@@ -1097,7 +1075,7 @@ body{
               color: #0066ff;
             }
           }
-          .img {
+          .context__img {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1109,7 +1087,7 @@ body{
           }
         }
       }
-      .contextAleph {
+      .context-aleph {
         background: #101828;
         border-radius: 16px;
         margin: 0;
@@ -1117,7 +1095,6 @@ body{
         padding: 64px;
 
         h1 {
-          
           font-style: normal;
           font-weight: bold;
           font-size: 24px;
@@ -1152,21 +1129,16 @@ body{
           }
         }
       }
-      .more {
-        a{
-          span{
-
+      .detail-aleph {
+        a {
+          span {
             font-size: 17px;
           }
         }
-        
-        
-        
       }
       .map {
         margin-top: 97px;
         h1 {
-          
           font-style: normal;
           font-weight: bold;
           font-size: 42px;
@@ -1174,13 +1146,13 @@ body{
         p {
           margin-top: 18px;
           margin-bottom: 56px;
-          
+
           font-style: normal;
           font-weight: 500;
           font-size: 24px;
         }
       }
-      .valuecontainer {
+      .container__value {
         h1 {
           font-size: 42px;
         }
@@ -1188,17 +1160,17 @@ body{
           font-size: 16px;
           margin: 10px 0 28px 0;
         }
-        .rowImg {
+        .value__row {
           flex-direction: column;
 
           h1 {
             margin-top: 28px;
             margin-bottom: 12px;
           }
-          .row-content__1140 {
+          .row-content-1140 {
             display: none;
           }
-          .rowcontent {
+          .row-content {
             padding: 32px 24px;
             border-radius: 16px;
             &:nth-child(2) {
@@ -1247,7 +1219,7 @@ body{
           margin: 8px 0 24px 0;
           font-size: 16px;
         }
-        .rowcontacts {
+        .row-contacts {
           margin: 0;
           justify-content: center;
         }
@@ -1271,10 +1243,9 @@ body{
               line-height: 28px;
               letter-spacing: -1px;
             }
-            .more{
-              a{
-                span{
-
+            .detail-aleph {
+              a {
+                span {
                   font-size: 17px;
                 }
               }
@@ -1282,10 +1253,10 @@ body{
           }
         }
       }
-      .writecontainer {
+      .container__write {
         flex-direction: column;
         text-align: center;
-        .writeContext {
+        .write__context {
           width: 100%;
 
           h1 {
@@ -1300,7 +1271,7 @@ body{
             font-size: 16px;
           }
         }
-        .writeImg {
+        .write__img {
           width: 100%;
           margin-top: 56px;
           padding: 0;
@@ -1314,14 +1285,14 @@ body{
   }
 }
 @media screen and (max-width: 576px) {
-  .containerfull {
+  .container-full {
     .container {
       .info {
         .context {
-          .text {
+          .context__text {
             width: 100%;
           }
-          .img {
+          .context__img {
             width: 100%;
             img {
               border-radius: 6px;
@@ -1329,17 +1300,16 @@ body{
           }
         }
       }
-      .contextAleph {
+      .context-aleph {
         border-radius: 6px;
       }
-      .more {
-        
+      .detail-aleph {
         a {
           font-size: 17px;
         }
       }
       .contacts {
-        .rowcontacts {
+        .row-contacts {
           flex-direction: column;
           a {
             margin: 0;
@@ -1379,7 +1349,7 @@ body{
       left: 0;
       transform: translate(0%, 0%);
       border-radius: 8px 8px 0px 0px;
-      .min-width_576 {
+      .min-width--576 {
         display: flex;
         justify-content: space-between;
         margin: 24px 16px 20px 16px;
@@ -1406,16 +1376,16 @@ body{
   }
 }
 @media screen and (max-width: 361px) {
-  .containerfull {
+  .container-full {
     .container {
       margin: auto 16px;
       .info {
         .context {
-          .text {
+          .context__text {
             width: 100%;
             margin-bottom: 33px;
           }
-          .img {
+          .context__img {
             width: 100%;
             margin-bottom: 96px;
 
@@ -1425,12 +1395,12 @@ body{
           }
         }
       }
-      .contextAleph {
+      .context-aleph {
         border-radius: 6px;
       }
 
-      .writecontainer {
-        .writeContext {
+      .container__write {
+        .write__context {
           h1 {
             letter-spacing: -1px;
           }

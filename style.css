@@ -1,22 +1,22 @@
-.containerfull .vacancy ul li .more, .containerfull .container .more {
+.container-full .vacancy ul li .detail-aleph, .container-full .container .detail-aleph {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-.containerfull .vacancy ul li .more a:hover span, .containerfull .container .more a:hover span {
-  color: #2E90FA;
+.container-full .vacancy ul li .detail-aleph a:hover span, .container-full .container .detail-aleph a:hover span {
+  color: #2e90fa;
   text-decoration: underline;
 }
-.containerfull .vacancy ul li .more a:hover path, .containerfull .container .more a:hover path {
-  fill: #2E90FA;
+.container-full .vacancy ul li .detail-aleph a:hover path, .container-full .container .detail-aleph a:hover path {
+  fill: #2e90fa;
 }
-.containerfull .vacancy ul li .more a, .containerfull .container .more a {
+.container-full .vacancy ul li .detail-aleph a, .container-full .container .detail-aleph a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.containerfull .vacancy ul li .more a span, .containerfull .container .more a span {
+.container-full .vacancy ul li .detail-aleph a span, .container-full .container .detail-aleph a span {
   margin-right: 12px;
   font-style: normal;
   font-weight: bold;
@@ -24,7 +24,7 @@
   color: #0066ff;
   letter-spacing: -0.005em;
 }
-.containerfull .vacancy ul li .more a svg, .containerfull .container .more a svg {
+.container-full .vacancy ul li .detail-aleph a svg, .container-full .container .detail-aleph a svg {
   width: 18px;
   height: 18px;
   fill: #0066ff;
@@ -87,7 +87,7 @@ body {
   box-shadow: 0px 12px 17px rgba(71, 78, 98, 0.12), 0px 5px 22px rgba(71, 78, 98, 0.12), 0px 7px 8px rgba(71, 78, 98, 0.12);
   border-radius: 12px;
 }
-.modal .modal-content .min-width_576 {
+.modal .modal-content .min-width--576 {
   display: none;
 }
 .modal .modal-content h1 {
@@ -223,79 +223,79 @@ body {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.containerfull .context-first {
+.container-full .context-first--1344 {
   display: none;
   overflow: hidden;
   margin-top: 60px;
   margin-left: 32px;
 }
-.containerfull .context-first .context {
+.container-full .context-first--1344 .context {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.containerfull .context-first .context .text h1 {
+.container-full .context-first--1344 .context .context__text h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
   margin-bottom: 20px;
   letter-spacing: -2px;
 }
-.containerfull .context-first .context .text p {
+.container-full .context-first--1344 .context .context__text p {
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 38px;
   color: #667085;
 }
-.containerfull .context-first .context .text a {
+.container-full .context-first--1344 .context .context__text a {
   text-decoration: none;
   color: #0066ff;
 }
-.containerfull .context-first .context .text a:hover {
+.container-full .context-first--1344 .context .context__text a:hover {
   text-decoration: underline;
   color: #2e90fa;
 }
-.containerfull .context-first .context .img {
+.container-full .context-first--1344 .context .context__img {
   width: 50%;
   flex-shrink: 0;
 }
-.containerfull .context-first .context .img img {
+.container-full .context-first--1344 .context .context__img img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
 }
-.containerfull .info .context {
+.container-full .info .context {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.containerfull .info .context .text {
+.container-full .info .context .context__text {
   width: 617px;
 }
-.containerfull .info .context .text h1 {
+.container-full .info .context .context__text h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
   margin-bottom: 20px;
   letter-spacing: -2px;
 }
-.containerfull .info .context .text p {
+.container-full .info .context .context__text p {
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 38px;
   color: #667085;
 }
-.containerfull .info .context .img {
+.container-full .info .context .context__img {
   flex-shrink: 0;
 }
-.containerfull .info .context .img img {
+.container-full .info .context .context__img img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
 }
-.containerfull .value {
+.container-full .value {
   margin-top: 56px;
   margin-bottom: 72px;
   padding-top: 72px;
@@ -303,11 +303,11 @@ body {
   text-align: center;
   background: #101828;
 }
-.containerfull .write {
+.container-full .write {
   background: #0075ff;
   margin-top: 72px;
 }
-.containerfull .navbar {
+.container-full .navbar {
   top: 0;
   left: 0;
   right: 0;
@@ -318,11 +318,11 @@ body {
   justify-content: space-between;
   padding: 16px 32px;
 }
-.containerfull .navbar .navbar-left {
+.container-full .navbar .navbar__menu {
   display: flex;
   align-items: center;
 }
-.containerfull .navbar .navbar-left a {
+.container-full .navbar .navbar__menu a {
   padding: 12px 16px;
   font-style: normal;
   font-weight: bold;
@@ -330,12 +330,12 @@ body {
   color: #101828;
   text-decoration: none;
 }
-.containerfull .navbar .navbar-left a:hover {
+.container-full .navbar .navbar__menu a:hover {
   color: #0075ff;
   background: rgba(208, 213, 221, 0.3);
   border-radius: 8px;
 }
-.containerfull .navbar .navbar-left .lang {
+.container-full .navbar .navbar__menu .navbar__lang {
   margin: 0 32px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -343,19 +343,19 @@ body {
   font-size: 14px;
   line-height: 22px;
 }
-.containerfull .navbar .navbar-left .lang a {
+.container-full .navbar .navbar__menu .navbar__lang a {
   padding: 0;
 }
-.containerfull .navbar .navbar-left .lang a:hover {
+.container-full .navbar .navbar__menu .navbar__lang a:hover {
   text-decoration: underline;
   background: none;
   color: #2e90fa;
 }
-.containerfull .navbar .navbar-left .lang a:first-child {
+.container-full .navbar .navbar__menu .navbar__lang a:first-child {
   margin-right: 12px;
   color: #98a2b3;
 }
-.containerfull .navbar .navbar-left button {
+.container-full .navbar .navbar__menu button {
   padding: 12px 16px;
   font-style: normal;
   font-weight: bold;
@@ -366,27 +366,27 @@ body {
   color: #0075ff;
   cursor: pointer;
 }
-.containerfull .sticky {
+.container-full .sticky {
   position: fixed;
   top: 0;
 }
-.containerfull .footer {
+.container-full .footer {
   padding: 72px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.containerfull .footer a {
+.container-full .footer a {
   text-decoration: none;
 }
-.containerfull .footer a:nth-child(1) {
+.container-full .footer a:nth-child(1) {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   color: #344054;
 }
-.containerfull .footer a:nth-child(2) {
+.container-full .footer a:nth-child(2) {
   margin-left: 24px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -395,61 +395,61 @@ body {
   line-height: 16px;
   color: #98a2b3;
 }
-.containerfull .container {
+.container-full .container {
   margin: 0 auto;
   max-width: 1504px;
 }
-.containerfull .container .info {
+.container-full .container .info {
   width: 100%;
   margin-top: 60px;
 }
-.containerfull .container .info .context {
+.container-full .container .info .context {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.containerfull .container .info .context:nth-child(2) {
+.container-full .container .info .context:nth-child(2) {
   display: flex;
   padding: 130px 0;
 }
-.containerfull .container .info .context .text h1 {
+.container-full .container .info .context .context__text h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
   letter-spacing: -2px;
 }
-.containerfull .container .info .context .text p {
+.container-full .container .info .context .context__text p {
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 38px;
   color: #667085;
 }
-.containerfull .container .info .context .text a {
+.container-full .container .info .context .context__text a {
   text-decoration: none;
   color: #0066ff;
 }
-.containerfull .container .info .context .text a:hover {
+.container-full .container .info .context .context__text a:hover {
   text-decoration: underline;
   color: #2e90fa;
 }
-.containerfull .container .info .context .img {
+.container-full .container .info .context .context__img {
   width: 744px;
   height: 566px;
 }
-.containerfull .container .info .context .img img {
+.container-full .container .info .context .context__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
 }
-.containerfull .container .contextAleph {
+.container-full .container .context-aleph {
   margin-top: 144px;
   margin-bottom: 56px;
   text-align: center;
 }
-.containerfull .container .contextAleph .contextValue {
+.container-full .container .context-aleph .contextValue {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,13 +458,13 @@ body {
   background: #101828;
   border-radius: 16px;
 }
-.containerfull .container .contextAleph .contextValue .content {
+.container-full .container .context-aleph .contextValue .content {
   width: 33.3%;
 }
-.containerfull .container .contextAleph .contextValue .content:nth-child(2) {
+.container-full .container .context-aleph .contextValue .content:nth-child(2) {
   margin: 0 32px;
 }
-.containerfull .container .contextAleph .contextValue h1 {
+.container-full .container .context-aleph .contextValue h1 {
   padding-top: 64px;
   font-style: normal;
   font-weight: 600;
@@ -472,19 +472,19 @@ body {
   color: #ffffff;
   margin-bottom: 12px;
 }
-.containerfull .container .contextAleph .contextValue h4 {
+.container-full .container .context-aleph .contextValue h4 {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   color: #e4e7ec;
   padding-bottom: 64px;
 }
-.containerfull .container .contextAleph h1 {
+.container-full .container .context-aleph h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
 }
-.containerfull .container .contextAleph p {
+.container-full .container .context-aleph p {
   margin-top: 20px;
   margin-bottom: 56px;
   font-family: "Roboto", sans-serif;
@@ -493,27 +493,27 @@ body {
   font-size: 20px;
   color: #667085;
 }
-.containerfull .container .contextAleph p a {
+.container-full .container .context-aleph p a {
   color: #667085;
   text-decoration: underline;
 }
-.containerfull .container .contextAleph .imgContextAleph {
+.container-full .container .context-aleph .imgContextAleph {
   margin-bottom: 56px;
 }
-.containerfull .container .map {
+.container-full .container .map {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 144px;
   text-align: center;
 }
-.containerfull .container .map h1 {
+.container-full .container .map h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
   letter-spacing: -2px;
 }
-.containerfull .container .map p {
+.container-full .container .map p {
   margin-top: 28px;
   margin-bottom: 75px;
   font-style: normal;
@@ -521,13 +521,13 @@ body {
   font-size: 36px;
   color: #667085;
 }
-.containerfull .container .map svg {
+.container-full .container .map svg {
   width: 848px;
 }
-.containerfull .container .map .map-dots circle {
+.container-full .container .map .map-dots circle {
   fill: #667085;
 }
-.containerfull .container .valuecontainer h1 {
+.container-full .container .container__value h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
@@ -535,7 +535,7 @@ body {
   color: #ffffff;
   letter-spacing: -2px;
 }
-.containerfull .container .valuecontainer h2 {
+.container-full .container .container__value h2 {
   margin-top: 12px;
   margin-bottom: 48px;
   font-family: "Roboto", sans-serif;
@@ -546,11 +546,11 @@ body {
   color: #e4e7ec;
   letter-spacing: 0.0038em;
 }
-.containerfull .container .valuecontainer .rowImg {
+.container-full .container .container__value .value__row {
   display: flex;
   justify-content: center;
 }
-.containerfull .container .valuecontainer .rowImg h1 {
+.container-full .container .container__value .value__row h1 {
   margin-top: 36px;
   margin-bottom: 20px;
   font-style: normal;
@@ -560,7 +560,7 @@ body {
   color: #101828;
   letter-spacing: -0.0075em;
 }
-.containerfull .container .valuecontainer .rowImg p {
+.container-full .container .container__value .value__row p {
   margin: 0;
   font-style: normal;
   font-weight: 500;
@@ -569,49 +569,49 @@ body {
   color: #344054;
   letter-spacing: -0.0075em;
 }
-.containerfull .container .valuecontainer .rowImg .rowcontent {
+.container-full .container .container__value .value__row .row-content {
   width: 480px;
   padding: 48px 32px;
   border-radius: 20px;
   text-align: left;
 }
-.containerfull .container .valuecontainer .rowImg .rowcontent p {
+.container-full .container .container__value .value__row .row-content p {
   margin-bottom: 0;
 }
-.containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
+.container-full .container .container__value .value__row .row-content:nth-child(1) {
   background: #fef0c7;
 }
-.containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
+.container-full .container .container__value .value__row .row-content:nth-child(2) {
   background: #d1e9ff;
   margin: 0 32px;
 }
-.containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
+.container-full .container .container__value .value__row .row-content:nth-child(3) {
   background: #d1fadf;
 }
-.containerfull .container .valuecontainer .rowImg .row-content__1140 {
+.container-full .container .container__value .value__row .row-content-1140 {
   display: none;
   justify-content: space-between;
 }
-.containerfull .container .valuecontainer .rowImg .row-content__1140 .rowcontent__1140 {
+.container-full .container .container__value .value__row .row-content-1140 .row-content-1140__container {
   text-align: left;
   width: 50%;
   padding: 48px 32px;
   border-radius: 20px;
   text-align: left;
 }
-.containerfull .container .valuecontainer .rowImg .row-content__1140 .rowcontent__1140 p {
+.container-full .container .container__value .value__row .row-content-1140 .row-content-1140__container p {
   margin-bottom: 0;
 }
-.containerfull .container .valuecontainer .rowImg .row-content__1140 .rowcontent__1140:first-child {
+.container-full .container .container__value .value__row .row-content-1140 .row-content-1140__container:first-child {
   background: #d1e9ff;
   margin-top: 20px;
   margin-right: 20px;
 }
-.containerfull .container .valuecontainer .rowImg .row-content__1140 .rowcontent__1140:last-child {
+.container-full .container .container__value .value__row .row-content-1140 .row-content-1140__container:last-child {
   background: #d1fadf;
   margin-top: 20px;
 }
-.containerfull .contacts {
+.container-full .contacts {
   margin-top: 72px;
   margin-bottom: 144px;
   padding: 48px 32px;
@@ -619,12 +619,12 @@ body {
   background: #f2f4f7;
   border-radius: 20px;
 }
-.containerfull .contacts h1 {
+.container-full .contacts h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
 }
-.containerfull .contacts p {
+.container-full .contacts p {
   padding-top: 12px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -632,26 +632,26 @@ body {
   font-size: 20px;
   color: #667085;
 }
-.containerfull .contacts .rowcontacts {
+.container-full .contacts .row-contacts {
   display: flex;
   justify-content: center;
 }
-.containerfull .contacts .rowcontacts a {
+.container-full .contacts .row-contacts a {
   margin-right: 48px;
   padding-top: 28px;
 }
-.containerfull .vacancy {
+.container-full .vacancy {
   scroll-behavior: smooth;
   scroll-padding-top: 10%;
 }
-.containerfull .vacancy h1 {
+.container-full .vacancy h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
   letter-spacing: -2px;
   color: #101828;
 }
-.containerfull .vacancy h2 {
+.container-full .vacancy h2 {
   padding-bottom: 16px;
   font-style: normal;
   font-weight: bold;
@@ -660,7 +660,7 @@ body {
   color: #101828;
   letter-spacing: -0.0075em;
 }
-.containerfull .vacancy h6 {
+.container-full .vacancy h6 {
   padding-top: 20px;
   padding-bottom: 48px;
   font-family: "Roboto", sans-serif;
@@ -671,7 +671,7 @@ body {
   letter-spacing: 0.0038em;
   color: #667085;
 }
-.containerfull .vacancy p {
+.container-full .vacancy p {
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -679,38 +679,38 @@ body {
   letter-spacing: -0.0075em;
   color: #667085;
 }
-.containerfull .vacancy ul {
+.container-full .vacancy ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.containerfull .vacancy ul li {
+.container-full .vacancy ul li {
   margin-bottom: 57px;
 }
-.containerfull .vacancy ul li .more {
+.container-full .vacancy ul li .detail-aleph {
   margin-top: 20px;
   justify-content: left;
 }
-.containerfull .vacancy ul li:last-child {
+.container-full .vacancy ul li:last-child {
   margin-bottom: 0;
 }
-.containerfull .writecontainer {
+.container-full .container__write {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 72px 0;
 }
-.containerfull .writecontainer .writeContext {
+.container-full .container__write .write__context {
   width: 45%;
 }
-.containerfull .writecontainer .writeContext h1 {
+.container-full .container__write .write__context h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
   color: #f9f9f9;
   letter-spacing: -2px;
 }
-.containerfull .writecontainer .writeContext p {
+.container-full .container__write .write__context p {
   margin-top: 24px;
   margin-bottom: 56px;
   font-family: "Roboto", sans-serif;
@@ -720,7 +720,7 @@ body {
   line-height: 32px;
   color: rgba(249, 249, 249, 0.7);
 }
-.containerfull .writecontainer .writeContext .trigger {
+.container-full .container__write .write__context .trigger {
   padding: 16px 32px;
   font-style: normal;
   font-weight: bold;
@@ -729,32 +729,32 @@ body {
   background: #fa0c62;
   border-radius: 8px;
 }
-.containerfull .writecontainer .writeContext .trigger:hover {
+.container-full .container__write .write__context .trigger:hover {
   background: #f63d68;
 }
-.containerfull .writecontainer .writeImg {
+.container-full .container__write .write__img {
   width: 45%;
 }
-.containerfull .writecontainer .writeImg img {
+.container-full .container__write .write__img img {
   border-radius: 20px;
   width: 100%;
 }
 
 @media screen and (max-width: 1921px) {
-  .containerfull .container {
+  .container-full .container {
     margin: auto 208px;
   }
-  .containerfull .container .info .context:nth-child(2) .text {
+  .container-full .container .info .context:nth-child(2) .context__text {
     padding-left: 143px;
   }
-  .containerfull .container .info .context:nth-child(3) .text {
+  .container-full .container .info .context:nth-child(3) .context__text {
     padding-right: 143px;
   }
-  .containerfull .container .info .context .img {
+  .container-full .container .info .context .context__img {
     width: 50%;
     height: 100%;
   }
-  .containerfull .container .info .context .img img {
+  .container-full .container .info .context .context__img img {
     width: 100%;
     height: 85%;
     -o-object-fit: cover;
@@ -762,207 +762,207 @@ body {
   }
 }
 @media screen and (max-width: 1601px) {
-  .containerfull .container {
+  .container-full .container {
     margin: auto 48px;
   }
-  .containerfull .container .map .img-map {
+  .container-full .container .map .img-map {
     background-size: 100%;
   }
 }
 @media screen and (max-width: 1345px) {
-  .containerfull .context-first {
+  .container-full .context-first--1344 {
     display: flex;
   }
-  .containerfull .context-first .context:nth-child(2) .text {
+  .container-full .context-first--1344 .context:nth-child(2) .context__text {
     padding-left: 126px;
   }
-  .containerfull .context-first .context:nth-child(3) .text {
+  .container-full .context-first--1344 .context:nth-child(3) .context__text {
     padding-right: 126px;
   }
-  .containerfull .context-first .context .img img {
+  .container-full .context-first--1344 .context .context__img img {
     border-radius: 20px;
   }
-  .containerfull .container {
+  .container-full .container {
     margin: auto 32px;
   }
-  .containerfull .container .info {
+  .container-full .container .info {
     margin-top: 0;
   }
-  .containerfull .container .info .context:first-child {
+  .container-full .container .info .context:first-child {
     display: none;
   }
-  .containerfull .container .info .context .img img {
+  .container-full .container .info .context .context__img img {
     border-radius: 20px;
   }
-  .containerfull .container .contextAleph .contextValue {
+  .container-full .container .context-aleph .contextValue {
     padding: 0 32px;
   }
-  .containerfull .container .map img {
+  .container-full .container .map img {
     width: 80%;
   }
-  .containerfull .container .contacts .rowcontacts {
+  .container-full .container .contacts .row-contacts {
     display: flex;
     align-items: center;
   }
-  .containerfull .container .contacts .rowcontacts a img {
+  .container-full .container .contacts .row-contacts a img {
     width: 100%;
   }
-  .containerfull .container .writecontainer .writeImg img {
+  .container-full .container .container__write .write__img img {
     width: 100%;
   }
 }
 @media screen and (max-width: 1141px) {
-  .containerfull .context-first {
+  .container-full .context-first--1344 {
     display: flex;
   }
-  .containerfull .context-first .context .img img {
+  .container-full .context-first--1344 .context .context__img img {
     border-radius: 17px;
   }
-  .containerfull .container {
+  .container-full .container {
     margin: auto 32px;
   }
-  .containerfull .container .info .context {
+  .container-full .container .info .context {
     justify-content: space-between;
   }
-  .containerfull .container .info .context .img img {
+  .container-full .container .info .context .context__img img {
     border-radius: 17px;
   }
-  .containerfull .container .info .context:nth-child(2) .text {
+  .container-full .container .info .context:nth-child(2) .context__text {
     padding-left: 16px;
   }
-  .containerfull .container .info .context:nth-child(3) .text {
+  .container-full .container .info .context:nth-child(3) .context__text {
     padding-right: 16px;
   }
-  .containerfull .container .valuecontainer .rowImg {
+  .container-full .container .container__value .value__row {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
+  .container-full .container .container__value .value__row .row-content:nth-child(1) {
     width: 100%;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
+  .container-full .container .container__value .value__row .row-content:nth-child(2) {
     display: none;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
+  .container-full .container .container__value .value__row .row-content:nth-child(3) {
     display: none;
   }
-  .containerfull .container .valuecontainer .rowImg .row-content__1140 {
+  .container-full .container .container__value .value__row .row-content-1140 {
     display: flex;
   }
-  .containerfull .container .writecontainer .writeContext {
+  .container-full .container .container__write .write__context {
     width: 49%;
   }
-  .containerfull .container .writecontainer .writeImg {
+  .container-full .container .container__write .write__img {
     width: 49%;
     margin: 0;
     padding-right: 0;
   }
-  .containerfull .container .writecontainer .writeImg img {
+  .container-full .container .container__write .write__img img {
     width: 100%;
   }
-  .containerfull .container .contacts .rowcontacts {
+  .container-full .container .contacts .row-contacts {
     flex-wrap: wrap;
     padding: 0 64px;
   }
 }
 @media screen and (max-width: 849px) {
-  .containerfull .container .map svg {
+  .container-full .container .map svg {
     width: 100%;
   }
 }
 @media screen and (max-width: 769px) {
-  .containerfull .context-first {
+  .container-full .context-first--1344 {
     display: none;
   }
-  .containerfull .navbar {
+  .container-full .navbar {
     padding: 16px;
   }
-  .containerfull .navbar img:first-child {
+  .container-full .navbar img:first-child {
     width: 166px;
   }
-  .containerfull .navbar .navbar-left img {
+  .container-full .navbar .navbar__menu img {
     width: 32px;
   }
-  .containerfull .navbar .navbar-left .lang {
+  .container-full .navbar .navbar__menu .navbar__lang {
     margin: 0;
     margin-right: 20px;
   }
-  .containerfull .navbar .navbar-left .vacancy {
+  .container-full .navbar .navbar__menu .vacancy {
     display: none;
   }
-  .containerfull .value {
+  .container-full .value {
     margin: 60px 0 0 0;
     padding: 48px 0;
   }
-  .containerfull .container {
+  .container-full .container {
     margin: auto 16px;
   }
-  .containerfull .container .info {
+  .container-full .container .info {
     margin-top: 48px;
   }
-  .containerfull .container .info .context {
+  .container-full .container .info .context {
     flex-direction: column;
     justify-content: left;
   }
-  .containerfull .container .info .context:nth-child(1) {
+  .container-full .container .info .context:nth-child(1) {
     display: flex;
   }
-  .containerfull .container .info .context:nth-child(2) {
+  .container-full .container .info .context:nth-child(2) {
     display: flex;
     flex-direction: column-reverse;
     padding: 0;
   }
-  .containerfull .container .info .context:nth-child(2) .text {
+  .container-full .container .info .context:nth-child(2) .context__text {
     padding: 0;
   }
-  .containerfull .container .info .context:nth-child(3) .text {
+  .container-full .container .info .context:nth-child(3) .context__text {
     padding: 0;
   }
-  .containerfull .container .info .context .text {
+  .container-full .container .info .context .context__text {
     width: 65%;
     margin-bottom: 40px;
   }
-  .containerfull .container .info .context .text h1 {
+  .container-full .container .info .context .context__text h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 20px;
   }
-  .containerfull .container .info .context .text p {
+  .container-full .container .info .context .context__text p {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     color: #667085;
   }
-  .containerfull .container .info .context .text a {
+  .container-full .container .info .context .context__text a {
     color: #0066ff;
   }
-  .containerfull .container .info .context .img {
+  .container-full .container .info .context .context__img {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 95px;
     width: 81%;
   }
-  .containerfull .container .info .context .img img {
+  .container-full .container .info .context .context__img img {
     border-radius: 12px;
   }
-  .containerfull .container .contextAleph {
+  .container-full .container .context-aleph {
     background: #101828;
     border-radius: 16px;
     margin: 0;
     margin-bottom: 32px;
     padding: 64px;
   }
-  .containerfull .container .contextAleph h1 {
+  .container-full .container .context-aleph h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     color: #f9f9f9;
   }
-  .containerfull .container .contextAleph p {
+  .container-full .container .context-aleph p {
     margin-bottom: 0;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -970,199 +970,199 @@ body {
     font-size: 20px;
     color: rgba(249, 249, 249, 0.7);
   }
-  .containerfull .container .contextAleph p a {
+  .container-full .container .context-aleph p a {
     color: rgba(249, 249, 249, 0.7);
   }
-  .containerfull .container .contextAleph .contextValue {
+  .container-full .container .context-aleph .contextValue {
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
-  .containerfull .container .contextAleph .contextValue .content {
+  .container-full .container .context-aleph .contextValue .content {
     width: auto;
   }
-  .containerfull .container .contextAleph .contextValue .content:nth-child(2) {
+  .container-full .container .context-aleph .contextValue .content:nth-child(2) {
     margin: 0;
   }
-  .containerfull .container .contextAleph .contextValue h1 {
+  .container-full .container .context-aleph .contextValue h1 {
     padding-top: 32px;
   }
-  .containerfull .container .contextAleph .contextValue h4 {
+  .container-full .container .context-aleph .contextValue h4 {
     padding: 0;
   }
-  .containerfull .container .more a span {
+  .container-full .container .detail-aleph a span {
     font-size: 17px;
   }
-  .containerfull .container .map {
+  .container-full .container .map {
     margin-top: 97px;
   }
-  .containerfull .container .map h1 {
+  .container-full .container .map h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
   }
-  .containerfull .container .map p {
+  .container-full .container .map p {
     margin-top: 18px;
     margin-bottom: 56px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
   }
-  .containerfull .container .valuecontainer h1 {
+  .container-full .container .container__value h1 {
     font-size: 42px;
   }
-  .containerfull .container .valuecontainer h2 {
+  .container-full .container .container__value h2 {
     font-size: 16px;
     margin: 10px 0 28px 0;
   }
-  .containerfull .container .valuecontainer .rowImg {
+  .container-full .container .container__value .value__row {
     flex-direction: column;
   }
-  .containerfull .container .valuecontainer .rowImg h1 {
+  .container-full .container .container__value .value__row h1 {
     margin-top: 28px;
     margin-bottom: 12px;
   }
-  .containerfull .container .valuecontainer .rowImg .row-content__1140 {
+  .container-full .container .container__value .value__row .row-content-1140 {
     display: none;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent {
+  .container-full .container .container__value .value__row .row-content {
     padding: 32px 24px;
     border-radius: 16px;
     padding: 32px 24px;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
+  .container-full .container .container__value .value__row .row-content:nth-child(2) {
     display: block;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
+  .container-full .container .container__value .value__row .row-content:nth-child(3) {
     display: block;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent img {
+  .container-full .container .container__value .value__row .row-content img {
     width: 120px;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent h1 {
+  .container-full .container .container__value .value__row .row-content h1 {
     font-size: 24px;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent p {
+  .container-full .container .container__value .value__row .row-content p {
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 0;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(1) {
+  .container-full .container .container__value .value__row .row-content:nth-child(1) {
     width: auto;
     height: 10%;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(2) {
+  .container-full .container .container__value .value__row .row-content:nth-child(2) {
     width: auto;
     margin: 16px 0;
   }
-  .containerfull .container .valuecontainer .rowImg .rowcontent:nth-child(3) {
+  .container-full .container .container__value .value__row .row-content:nth-child(3) {
     width: auto;
     margin: 0;
   }
-  .containerfull .container .contacts {
+  .container-full .container .contacts {
     margin: 48px 0;
     padding: 48px 32px;
   }
-  .containerfull .container .contacts h1 {
+  .container-full .container .contacts h1 {
     padding: 0;
     font-size: 24px;
   }
-  .containerfull .container .contacts p {
+  .container-full .container .contacts p {
     padding: 0;
     margin: 8px 0 24px 0;
     font-size: 16px;
   }
-  .containerfull .container .contacts .rowcontacts {
+  .container-full .container .contacts .row-contacts {
     margin: 0;
     justify-content: center;
   }
-  .containerfull .container .vacancy h1 {
+  .container-full .container .vacancy h1 {
     font-size: 42px;
   }
-  .containerfull .container .vacancy h6 {
+  .container-full .container .vacancy h6 {
     font-size: 16px;
     padding-top: 12px;
     padding-bottom: 36px;
   }
-  .containerfull .container .vacancy ul li h2 {
+  .container-full .container .vacancy ul li h2 {
     font-size: 24px;
   }
-  .containerfull .container .vacancy ul li p {
+  .container-full .container .vacancy ul li p {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1px;
   }
-  .containerfull .container .vacancy ul li .more a span {
+  .container-full .container .vacancy ul li .detail-aleph a span {
     font-size: 17px;
   }
-  .containerfull .container .writecontainer {
+  .container-full .container .container__write {
     flex-direction: column;
     text-align: center;
   }
-  .containerfull .container .writecontainer .writeContext {
+  .container-full .container .container__write .write__context {
     width: 100%;
   }
-  .containerfull .container .writecontainer .writeContext h1 {
+  .container-full .container .container__write .write__context h1 {
     font-size: 42px;
   }
-  .containerfull .container .writecontainer .writeContext p {
+  .container-full .container .container__write .write__context p {
     width: 100%;
     font-size: 20px;
     line-height: 32px;
   }
-  .containerfull .container .writecontainer .writeContext a {
+  .container-full .container .container__write .write__context a {
     font-size: 16px;
   }
-  .containerfull .container .writecontainer .writeImg {
+  .container-full .container .container__write .write__img {
     width: 100%;
     margin-top: 56px;
     padding: 0;
     border-radius: 12px;
   }
-  .containerfull .container .footer {
+  .container-full .container .footer {
     margin: 60px 24px;
   }
 }
 @media screen and (max-width: 576px) {
-  .containerfull .container .info .context .text {
+  .container-full .container .info .context .context__text {
     width: 100%;
   }
-  .containerfull .container .info .context .img {
+  .container-full .container .info .context .context__img {
     width: 100%;
   }
-  .containerfull .container .info .context .img img {
+  .container-full .container .info .context .context__img img {
     border-radius: 6px;
   }
-  .containerfull .container .contextAleph {
+  .container-full .container .context-aleph {
     border-radius: 6px;
   }
-  .containerfull .container .more a {
+  .container-full .container .detail-aleph a {
     font-size: 17px;
   }
-  .containerfull .container .contacts .rowcontacts {
+  .container-full .container .contacts .row-contacts {
     flex-direction: column;
   }
-  .containerfull .container .contacts .rowcontacts a {
+  .container-full .container .contacts .row-contacts a {
     margin: 0;
     padding-top: 33px;
   }
-  .containerfull .container .contacts .rowcontacts a:nth-child(1) {
+  .container-full .container .contacts .row-contacts a:nth-child(1) {
     padding-top: 0;
     order: 1;
   }
-  .containerfull .container .contacts .rowcontacts a:nth-child(2) {
+  .container-full .container .contacts .row-contacts a:nth-child(2) {
     order: 5;
   }
-  .containerfull .container .contacts .rowcontacts a:nth-child(3) {
+  .container-full .container .contacts .row-contacts a:nth-child(3) {
     order: 2;
   }
-  .containerfull .container .contacts .rowcontacts a:nth-child(4) {
+  .container-full .container .contacts .row-contacts a:nth-child(4) {
     order: 3;
   }
-  .containerfull .container .contacts .rowcontacts a:nth-child(5) {
+  .container-full .container .contacts .row-contacts a:nth-child(5) {
     order: 4;
   }
-  .containerfull .container .map {
+  .container-full .container .map {
     font-size: 17px;
     width: 100%;
   }
@@ -1175,16 +1175,16 @@ body {
     transform: translate(0%, 0%);
     border-radius: 8px 8px 0px 0px;
   }
-  .modal .modal-content .min-width_576 {
+  .modal .modal-content .min-width--576 {
     display: flex;
     justify-content: space-between;
     margin: 24px 16px 20px 16px;
   }
-  .modal .modal-content .min-width_576 h1 {
+  .modal .modal-content .min-width--576 h1 {
     display: flex;
     margin: 0;
   }
-  .modal .modal-content .min-width_576 .close-button {
+  .modal .modal-content .min-width--576 .close-button {
     display: flex;
   }
   .modal .modal-content form {
@@ -1200,24 +1200,24 @@ body {
   }
 }
 @media screen and (max-width: 361px) {
-  .containerfull .container {
+  .container-full .container {
     margin: auto 16px;
   }
-  .containerfull .container .info .context .text {
+  .container-full .container .info .context .context__text {
     width: 100%;
     margin-bottom: 33px;
   }
-  .containerfull .container .info .context .img {
+  .container-full .container .info .context .context__img {
     width: 100%;
     margin-bottom: 96px;
   }
-  .containerfull .container .info .context .img img {
+  .container-full .container .info .context .context__img img {
     border-radius: 4px;
   }
-  .containerfull .container .contextAleph {
+  .container-full .container .context-aleph {
     border-radius: 6px;
   }
-  .containerfull .container .writecontainer .writeContext h1 {
+  .container-full .container .container__write .write__context h1 {
     letter-spacing: -1px;
   }
 
