@@ -343,8 +343,12 @@ body {
   font-size: 14px;
   line-height: 22px;
 }
+.container-full .navbar .navbar__menu .navbar__lang .lang--active {
+  color: #0066ff;
+}
 .container-full .navbar .navbar__menu .navbar__lang a {
   padding: 0;
+  color: #98a2b3;
 }
 .container-full .navbar .navbar__menu .navbar__lang a:hover {
   text-decoration: underline;
@@ -353,7 +357,6 @@ body {
 }
 .container-full .navbar .navbar__menu .navbar__lang a:first-child {
   margin-right: 12px;
-  color: #98a2b3;
 }
 .container-full .navbar .navbar__menu button {
   padding: 12px 16px;

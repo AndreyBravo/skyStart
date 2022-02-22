@@ -368,8 +368,12 @@ body {
         font-weight: bold;
         font-size: 14px;
         line-height: 22px;
+        .lang--active {
+          color: #0066ff;
+        }
         a {
           padding: 0;
+          color: #98a2b3;
           &:hover {
             text-decoration: underline;
             background: none;
@@ -377,7 +381,6 @@ body {
           }
           &:first-child {
             margin-right: 12px;
-            color: #98a2b3;
           }
         }
       }
