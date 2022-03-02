@@ -175,7 +175,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
       }else{
         topOffset = 150;
       }      
-      const elementPosition = scrollTarget.getBoundingClientRect().top;
+      //const elementPosition = scrollTarget.getBoundingClientRect().top;
       const offsetPosition = elementPosition - topOffset;
 
       window.scrollBy({
