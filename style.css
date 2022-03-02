@@ -438,10 +438,6 @@ body {
   text-decoration: underline;
   color: #2e90fa;
 }
-.container-full .container .info .context .context__img {
-  height: 100%;
-  width: 100%;
-}
 .container-full .container .info .context .context__img img {
   width: 744px;
   height: 566px;
