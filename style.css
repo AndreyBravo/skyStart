@@ -324,41 +324,51 @@ body {
   display: flex;
   align-items: center;
 }
-.container-full .navbar .navbar__menu a {
-  padding: 12px 16px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  color: #101828;
-  text-decoration: none;
+.container-full .navbar .navbar__menu .dropdown {
+  margin-right: 30px;
+  position: relative;
+  display: inline-block;
 }
-.container-full .navbar .navbar__menu a:hover {
-  color: #0075ff;
-  background: rgba(208, 213, 221, 0.3);
-  border-radius: 8px;
+.container-full .navbar .navbar__menu .dropdown:hover .dropdown-content {
+  display: block;
 }
-.container-full .navbar .navbar__menu .navbar__lang {
-  margin: 0 32px;
+.container-full .navbar .navbar__menu .dropdown .dropbtn {
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 22px;
+  cursor: pointer;
 }
-.container-full .navbar .navbar__menu .navbar__lang .lang--active {
-  color: #0066ff;
+.container-full .navbar .navbar__menu .dropdown .dropbtn svg {
+  width: 30px;
+  height: 25px;
 }
-.container-full .navbar .navbar__menu .navbar__lang a {
-  padding: 0;
-  color: #98a2b3;
+.container-full .navbar .navbar__menu .dropdown .dropbtn:hover {
+  color: #101828;
+  background-color: #fff;
 }
-.container-full .navbar .navbar__menu .navbar__lang a:hover {
-  text-decoration: underline;
-  background: none;
-  color: #2e90fa;
+.container-full .navbar .navbar__menu .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 180px;
+  margin-left: -20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 12px;
 }
-.container-full .navbar .navbar__menu .navbar__lang a:first-child {
-  margin-right: 12px;
+.container-full .navbar .navbar__menu .dropdown .dropdown-content a {
+  color: #101828;
+  padding: 15px 26px;
+  text-decoration: none;
+  display: block;
+}
+.container-full .navbar .navbar__menu .dropdown .dropdown-content a:hover {
+  background: rgba(208, 213, 221, 0.3);
 }
 .container-full .navbar .navbar__menu button {
   padding: 12px 16px;
@@ -1201,6 +1211,12 @@ body {
   }
 }
 @media screen and (max-width: 361px) {
+  .container-full .navbar .navbar__menu .dropdown {
+    margin-right: 15px;
+  }
+  .container-full .navbar .navbar__menu .dropdown .dropdown-content {
+    max-width: 160px;
+  }
   .container-full .container {
     margin: auto 16px;
   }
