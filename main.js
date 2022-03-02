@@ -198,11 +198,11 @@ document.addEventListener("DOMContentLoaded", function () {
     formDate.append('file', formFile.files[0])
     if(error === 0){
       form.classList.add('_sending')
-      let response = await fetch('sendmail.php',{
+      // let response = await fetch('sendmail.php',{
         
-        method:"POST",
-        body:formDate
-      })
+      //   method:"POST",
+      //   body:formDate
+      // })
       if(response.ok){
         let result = await response.json()
         form.reset();
