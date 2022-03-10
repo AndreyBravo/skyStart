@@ -341,7 +341,6 @@ body {
     right: 0;
     background-color: #fff;
     z-index: 999;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -349,14 +348,10 @@ body {
     .navbar__menu {
       display: flex;
       align-items: center;
-
       .dropdown {
         margin-right: 30px;
         position: relative;
         display: inline-block;
-        &:hover .dropdown-content {
-          display: block;
-        }
         .dropbtn {
           display: flex;
           align-items: center;
@@ -365,18 +360,21 @@ body {
           font-weight: bold;
           font-size: 14px;
           color: #343741;
+          background-color: #fff;
           cursor: pointer;
           svg {
             width: 28px;
             height: 25px;
           }
-          &:hover {
-            background-color: #fff;
-          }
+        }
+        .show {
+          opacity: 1 !important;
+          visibility: visible !important;
         }
         .dropdown-content {
-          display: none;
           position: absolute;
+          opacity: 0;
+          visibility: hidden;
           padding: 12px 0;
           width: 180px;
           left: 50%;
@@ -385,6 +383,7 @@ body {
             0 9px 46px rgb(71 78 98 / 12%), 0 11px 15px rgb(71 78 98 / 8%);
           border-radius: 8px;
           background: #fff;
+          transition: all .2s ease-in-out;
           a {
             display: block;
             padding: 12px;

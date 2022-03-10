@@ -116,6 +116,26 @@ setTimeout(dotPulse,400);
 setTimeout(dotPulse,700);
 setTimeout(dotPulse,1000);
 
+//lang
+let lang = document.querySelector('.dropdown-content'); 
+let btn = document.querySelector(".dropbtn");
+let popup = document.querySelector(".dropdown-content");
+
+btn.onclick = function toggle(e) {
+  e.stopPropagation();
+  popup.classList.toggle("show");
+}
+
+lang.onclick = function (event) {
+  event.stopPropagation();
+}
+
+window.onclick = function closePopup() {
+  if (popup.classList.contains("show")) {
+    popup.classList.toggle("show");
+  }
+}
+
 
 //modal
 const modal = document.querySelector(".modal");
