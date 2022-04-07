@@ -110,11 +110,11 @@ var dotPulse = function () {
   });*/
 };
 
-dotPulse();
-setTimeout(dotPulse,100);
-setTimeout(dotPulse,400);
-setTimeout(dotPulse,700);
-setTimeout(dotPulse,1000);
+// dotPulse();
+// setTimeout(dotPulse,100);
+// setTimeout(dotPulse,400);
+// setTimeout(dotPulse,700);
+// setTimeout(dotPulse,1000);
 
 //lang
 let lang = document.querySelector('.dropdown-content'); 
